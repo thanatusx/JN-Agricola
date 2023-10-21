@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@700&family=Manrope:wght@300;500;800&family=Poppins:ital,wght@0,300;0,500;0,700;1,900&display=swap');
+
+:root{
+    --preto : #000;
+    --cinza : #545454;
+    --cinzaesc : #737373;
+    --brancoe : #ddd;
+    --azul : #002366;
+    --laranjac : #FFAF4C;
+    --laranja : #FF8200;
+    --laranjae : #642704;
+    --branco : #fff;
+    --div : #a3a3a3;
+    --div2 : #e9e9e9;
+}
+
+*{
+    font-family: "Manrope", sans-serif;
+    max-width: 1500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--branco);
+    height: 100%;
+}
+
+ a{
+    list-style: none;
+    text-decoration: none;
+}
+
+#wpp{
+    z-index: 9999;
+    width: 55px;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    transition: opacity 0.3s;
+    transition: tranform 0.9s;
+}
+
+#wpp:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.banner{
+    background-image: url(images/fundo.png);
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    display: flex;
+    padding: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.txt-banner{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    max-width: 600px;
+}
+
+.titulo-banner h1{
+    font-size: 2.8em;
+    font-weight: 700;
+    color: var(--azul);
+    padding-bottom: 10px;
+}
+
+.banner-txt p{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--branco);
+    padding-bottom: 20px;
+}
+
+.botao-banner a{
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 13px 32px;
+    background-color: var(--azul);
+    color: var(--brancoe);
+    border-radius: 20px;
+}
+
+.botao-banner a:hover{
+    background-color: var(--brancoe);
+    color: var(--azul);
+    transition: all 0.3s;
+}
+
+.img-banner img{
+    width: 500px;
+    padding-left: 20px;
+}
+
+/*=======PARTE DE BENEFÍCIOS========*/
+
+.titulo-beneficios{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 25px;
+}
+
+.titulo-beneficios h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--laranjae);
+}
+
+.titulo-beneficios h2{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: var(--laranja);
+}
+
+.conteudobene{
+    padding-bottom: 50px;
+}
+
+.container-beneficios {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.grade-beneficios {
+    width: calc(33.33% - 20px);
+    text-align: center;
+    margin: 10px;
+    padding-top: 10px;
+}
+
+.grade-beneficios img {
+    width: 100px;
+    padding-bottom: 10px;
+}
+
+.grade-beneficios p{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--preto);
+    padding-bottom: 20px;
+}
+
+/*=======PARTE DE RELATOS========*/
+
+.prova-real{
+    background-color: var(--azul);
+    display: flex;
+    justify-content: space-between;
+}
+
+.txt-relato{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding-top: 50px;
+    max-width: 700px;
+}
+
+#titulo-relatos{
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+#titulo-relatos h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--branco);
+    padding-bottom: 50px;
+}
+
+#relato p{
+    font-family: "Manrope", sans-serif;
+    text-align: justify;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: var(--branco);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p#autor{
+    font-family: "Manrope", sans-serif;
+    text-align: right;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: var(--branco);
+}
+
+.relato-img img{
+    max-width: 100%;
+    width: 400px;
+    padding-top: 9px;
+    transform: scaleX(-1);
+    display: block;
+}
+
+.quemsomosnos{
+padding: 50px;
+}
+
+.quemsomos{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo-sobre h1{
+    text-align: center;
+    font-size: 2.4em;
+    font-weight: 700;
+    color: var(--laranjae);
+    padding-top: 50px;
+}
+
+.txt-sobre{
+    padding: 50px;
+}
+
+.txt-sobre p{
+    text-align: justify;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: var(--preto);
+}
+
+.rodape{
+    height: 150px;
+    background-color: var(--azul);
+}
