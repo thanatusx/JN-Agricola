@@ -428,10 +428,7 @@ img.img-mobile{
         display: none;
     }
 
-
     .produtos{
-        display: flex;
-        justify-content: center;
         margin-bottom: 0px;
     }
     
@@ -444,10 +441,6 @@ img.img-mobile{
         height: 275px;
         border-radius: 5px;
         margin: 0 10px;
-    }
-    
-    .card.link{
-        display: block;
     }
     
     .imgcard img{
