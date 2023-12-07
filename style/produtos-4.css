@@ -30,6 +30,9 @@ body{
     text-decoration: none;
 }
 
+.mobile{
+    display: none;
+}
 
 #wpp{
     z-index: 9999;
