@@ -336,11 +336,11 @@ img.img-mobile{
 
 @media screen and (max-width: 768px){
 
-    .grade-beneficios .desktop{
+    .desktop{
         display: none;
     }
 
-    .grade-beneficios .mobile{
+    .mobile{
         display: block;
     }
 
@@ -392,16 +392,18 @@ img.img-mobile{
     }
 
     .titulo-marcas{
-        font-size: 0.9em;
+        font-size: 1.5em;
     }
     
     .titulo-marcas h1{
         margin: 10px;
     }
     
-    .container-marcas{
-        margin: 0px 0px;
-
+    .container-marcas {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0px;
+        margin: 0px 60px;
     }
     
     .marcas-img {
@@ -425,54 +427,92 @@ img.img-mobile{
 
 
     .produtos{
-        height: auto;
-        margin-bottom: 10px;
-    }
-    
-    .titulo-prod h1{
-        font-size: 1.5em;;
-        padding-top: 10px;
-    }
-
-    .container-produtos{
-        width: 95%;
-        height: auto;
-    }
-
-    .container-card{
-        width: 100%;
-        height: 200px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        margin-bottom: 0px;
     }
-
+    
+    .produtos:not(:last-child){
+        margin-bottom: 40px;
+    }
+    
     .card{
-        width: 30%;
-        height: 160px;
-        box-sizing: border-box;
-    }
-
-    .card-img img{
-        width: 90px;
-        margin-top: 15px;
-    }
-    
-    .card-txt h1{
-        font-size: 0.6em;
-        margin: 0px 0px;
+        width: 300px;
+        height: 450px;
+        background-color: var(--azul);
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        margin: 0 20px;
     }
     
-    .card-btn a{
+    .card.link{
+        display: block;
+    }
+    
+    .imgcard img{
+        width: 250px;
+        border-radius: 10px;
+        margin: 20px;
+        margin-top: 25px;
+    }
+    
+    .txtcard h1{
+        text-align: center;
+        height: 80px;
+        margin: 0px 20px;
         font-family: "Poppins", sans-serif;
+        font-size: 24px;
         font-weight: 500;
-        font-size: 0.5em;
-        border-radius: 20px;
-        padding: 5px 10px;
-
+        color: var(--branco);
+        line-height: 30px;
+        padding-bottom: 20px;
     }
-
-    #chicotes{
-        width: 100%;
+    
+    #mini h1{
+        font-size: 22px;
+    }
+    
+    .btncard a{
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        background-color: var(--branco);
+        color: var(--azul);
+        font-size: 28px;
+        font-weight: 600;
+        padding: 5px 19px;
+        border-radius: 5px;
+    }
+    
+    .btncard a:hover{
+        background-color: var(--laranja);
+        color: var(--branco);
+        transition: 0.2s;
+    }
+    
+    .paginacao{
+        display: flex;
+        justify-content: center;
+        margin: 30px 0px;
+    }
+    
+    .numero{
+        margin: 0px 15px;
+    }
+    
+    .numero a{
+        display: block;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 30px;
+        background-color: var(--laranja);
+        color: var(--branco);
+        width: 50px;
+        height: 50px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 5px;
+        padding-top: 10px;
     }
 
     .rodape{
