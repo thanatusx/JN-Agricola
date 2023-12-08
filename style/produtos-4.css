@@ -446,6 +446,8 @@ img.img-mobile{
     .vazio{
         width: 175px;
         height: 275px;
+        border-radius: 5px;
+        margin: 0 10px;
     }
     
     .imgcard img{
