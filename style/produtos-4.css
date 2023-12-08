@@ -442,6 +442,11 @@ img.img-mobile{
         border-radius: 5px;
         margin: 0 10px;
     }
+
+    .vazio{
+        width: 175px;
+        height: 275px;
+    }
     
     .imgcard img{
         width: 150px;
