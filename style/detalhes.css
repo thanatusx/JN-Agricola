@@ -288,11 +288,11 @@ body{
 
 @media screen and (max-width: 768px){
 
-    .grade-beneficios .desktop{
+    .desktop{
         display: none;
     }
 
-    .grade-beneficios .mobile{
+    .mobile{
         display: block;
     }
 
@@ -343,88 +343,65 @@ body{
         width: 75px;
     }
 
-    .titulo-marcas{
-        font-size: 0.9em;
+    .produto{
+        margin-bottom: 100px;
     }
     
-    .titulo-marcas h1{
-        margin: 10px;
+    .barratitulo{
+        height: 100px;
+        width: auto;
+        margin-left: 0;
     }
     
-    .container-marcas{
-        margin: 0px 0px;
+    .barratitulo svg{
+        width: 25px;
+    }
 
+    .barratitulo a{
+        margin-left: 20px;
     }
     
-    .marcas-img {
-        margin: 10px;
-        flex: 0 0 calc(20% - 20px);
+    .barratitulo h1{
+        font-family: "Poppins", sans-serif;
+        margin-left: 20px;
+        font-size: 20px;
     }
     
-    .marcas-img img {
-        width: 100%;
+    .container{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--azul);
         height: auto;
     }
-
-    .prod-img .img-mobile{
+    
+    .imgproduto img{
+        width: 300px;;
+        margin: 50px 0px;
+    }
+    
+    .divisa{
         display: block;
         width: 100%;
-    }
-
-    .prod-img .img-desktop{
-        display: none;
-    }
-
-
-    .produtos{
-        height: auto;
-        margin-bottom: 10px;
+        height: 3px;
+        justify-content: center;
+        margin: 0;
     }
     
-    .titulo-prod h1{
-        font-size: 1.5em;;
-        padding-top: 10px;
-    }
-
-    .container-produtos{
-        width: 95%;
-        height: auto;
-    }
-
-    .container-card{
-        width: 100%;
-        height: 200px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .card{
-        width: 30%;
-        height: 160px;
-        box-sizing: border-box;
-    }
-
-    .card-img img{
-        width: 90px;
-        margin-top: 15px;
+    .tituloitens{
+        margin-top: 0;
+        margin-bottom: 20px;
     }
     
-    .card-txt h1{
-        font-size: 0.6em;
-        margin: 0px 0px;
+    .tituloitens h1{
+        font-size: 22px;
     }
     
-    .card-btn a{
-        font-family: "Poppins", sans-serif;
-        font-weight: 500;
-        font-size: 0.5em;
-        border-radius: 20px;
-        padding: 5px 10px;
-
+    .listaitens {
+        margin-bottom: 20px;
     }
-
-    #chicotes{
-        width: 100%;
+    
+    .listaitens a{
+        font-size: 18px;
     }
 
     .rodape{
