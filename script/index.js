@@ -6,8 +6,15 @@ menu.addEventListener('click', () => {
     NavMenu.classList.toggle('ativo');
 })
 
-var cont = 1
+const dropdown = document.querySelector('.dropdown');
+const dropdownmenu = document.querySelector('.dropdown-menu');
 
+dropdownmenu.addEventListener('click', () => {
+    dropdown.classList.toggle('ativo');
+});
+
+
+var cont = 1
 document.getElementById('radio1').checked = true
 
 setInterval(() =>{

@@ -119,20 +119,11 @@ body{
     max-width: 2000px;
 }
 
-.barratitulo a{
-    margin-left: 106px;
-}
-
 .barratitulo h1{
     font-family: "Poppins", sans-serif;
-    margin-left: 0px;
     font-size: 40px;
     font-weight: 700;
-}
-
-.barratitulo svg:hover{
-    opacity: 0.9;
-    transform: scale(1.02);
+    text-align: center;
 }
 
 .container{
@@ -353,17 +344,8 @@ body{
         margin-left: 0;
     }
     
-    .barratitulo svg{
-        width: 25px;
-    }
-
-    .barratitulo a{
-        margin-left: 20px;
-    }
-    
     .barratitulo h1{
         font-family: "Poppins", sans-serif;
-        margin-left: 20px;
         font-size: 20px;
     }
     

@@ -5,11 +5,12 @@
     --cinza : #545454;
     --cinzaesc : #bbbbbb;
     --brancoe : #ddd;
+    --azulc : #00379e;
     --azul : #002366;
     --azule : #001438;
     --laranjac : #FFAF4C;
     --laranja : #FF8200;
-    --vermelho : rgb(187, 75, 0);
+    --vermelho : #bb4b00;
     --laranjae : #642704;
     --branco : #fff;
 }
@@ -30,6 +31,7 @@ body{
     list-style: none;
     text-decoration: none;
 }
+
 
 
 #wpp{
@@ -82,9 +84,53 @@ body{
     padding-left: 400px;
 }
 
+.navbar li, a{
+    text-align: center;
+}
+
 .navbar li, a:hover{
-    transition: 0 0 0.1s;
+    transition: .2s;
     color: var(--laranja);
+}
+
+ul li.mobile{
+    display: none;
+}
+
+.dropdown li{
+    display: block;
+}
+
+ul.dropdown{
+    padding: 0;
+}
+
+.dropdown{
+    position: absolute;
+    background-color: var(--azul);
+    z-index: 999;
+    margin-top: 30px;
+    margin-left: -80px;
+    transition: .1s;
+    opacity: 0;
+}
+
+.dropdown a{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+}
+
+ul li ul.dropdown.ativo{
+    padding: 0;
+    margin-left: -80px;
+    transition: .1s;
+    opacity: 1;
+}
+
+ul li ul.dropdown li{
+    border-top: 1.5px solid var(--azulc);
 }
 
 .menu{
@@ -461,9 +507,17 @@ p.mobile{
         top: 95px;
         width: 100%;
         padding: 0px;
-        border-top: 2px solid var(--branco);
         padding: 10px 0;
         z-index: 9999;
+        border-top: 2px solid var(--azulc);
+    }
+
+    ul li.mobile{
+        display: block;
+    }
+
+    ul li.desktop{
+        display: none;
     }
 
     li.nav-item{
