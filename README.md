@@ -1,4 +1,4 @@
 # jnagricola
-site simples usando html, css e javascript.
+site usando html, css e javascript.
 
-propósito do site seria para rodar campanha de anúncios do google, então é apenas um demonstrativo do que a empresa tem a oferecer e os produtos que eles trabalham.
+O propósito do site seria mostrar todos os produtos e serviços que a empresa tem a oferecer, e também rodar campanhas de anúncio do google para análise de tráfego.
