@@ -16,27 +16,23 @@
 }
 
 *{
-    font-family: "Manrope", sans-serif;
     margin: 0 auto;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    list-style: none;
+    
 }
 
-body{
+html{
     background-color: var(--branco);
     overflow-x: hidden;
 }
 
- a, li{
-    list-style: none;
+body a{
     text-decoration: none;
 }
 
-
-
 #wpp{
-    z-index: 9999;
-    width: 55px;
     position: fixed;
     right: 20px;
     bottom: 20px;
@@ -45,97 +41,21 @@ body{
 }
 
 #wpp:hover {
-    opacity: 0.9;
+    opacity: .9;
     transform: scale(1.05);
     transition: .2s;
 }
 
 /*==============NAVBAR===============*/
 
-.header{
-    background-color: var(--azul);
-    height: 95px;
-}
-
-.navbar{
-    max-width: 2000px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: all 0.5s;
-    padding: 5px 0px;
-    user-select: none;
-}
-
-.navbar a{
+.navbar-custom a{
     color: var(--branco);
-    font-family: "Poppins", sans-serif;
-    font-size: 1.2em;
-    font-weight: 500;
+    font: 500 20px/20px "Poppins", sans-serif;
 }
 
-.navbar li{
-    display: inline-block;
-    padding: 0px 30px;
-
-}
-
-.navbar ul{
-    padding-left: 400px;
-}
-
-.navbar li, a{
-    text-align: center;
-}
-
-.navbar li, a:hover{
+.navbar-custom li, a:hover{
     transition: .2s;
     color: var(--laranja);
-}
-
-ul li.mobile{
-    display: none;
-}
-
-.dropdown li{
-    display: block;
-}
-
-ul.dropdown{
-    padding: 0;
-}
-
-.dropdown{
-    position: absolute;
-    background-color: var(--azul);
-    z-index: 999;
-    margin-top: 30px;
-    margin-left: -80px;
-    transition: .1s;
-    opacity: 0;
-}
-
-.dropdown a{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin: 20px 10px;
-}
-
-ul li ul.dropdown.ativo{
-    padding: 0;
-    margin-left: -80px;
-    transition: .1s;
-    opacity: 1;
-}
-
-ul li ul.dropdown li{
-    border-top: 1.5px solid var(--azulc);
-}
-
-.menu{
-    cursor: pointer;
-    display: none;
 }
 
 .menu .bar{
@@ -148,72 +68,41 @@ ul li ul.dropdown li{
     transition: all 0.3s;
 }
 
-.img-logo{
-    padding-left: 100px;
+.menu.ativo .bar:nth-child(1){
+    transform:  translateY(8px) rotate(45deg);
+}
+.menu.ativo .bar:nth-child(2) {
+    opacity: 0;
+}
+.menu.ativo .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
 }
 
-.logo img{
-    width: 85px;
-}
-
-/*================BANNER ROTATIVO=================*/
-
-section.slider{
-    margin: 0 auto;
+.nav-menu {
+    position: absolute;
+    top: -500px;
     width: 100%;
-    padding: 0 !important;
-    overflow-x: hidden;
-    max-width: 2000px;
+    background: var(--azul);
 }
 
-.slider-content{
-    width: 600%;
-    display: flex;
-    height: auto;
-}
-
-.slider-content input, .img-mobile{
-    display: none;
-}
-
-.slide-box{
-    width: 18%;
-    height: auto;
-    position: relative;
-    margin: 0;
-    transition: 0.5s;
-}
-
-.slide-box img{
+.nav-menu.ativo{
+    top: 84px;
     width: 100%;
+    border: 2px solid var(--azulc);
+    transition: .2s;
 }
 
-#radio1:checked ~ .primeiro{
-    margin-left: 0%;
+.dropdown-menu-css{
+    background-color: var(--azul) !important;
 }
 
-#radio2:checked ~ .primeiro{
-    margin-left: -18%;
+.dropdown-menu-css a:hover{
+    background-color: var(--azul);
+    color: var(--laranja);
 }
 
-#radio3:checked ~ .primeiro{
-    margin-left: -36%;
-}
-
-#radio4:checked ~ .primeiro{
-    margin-left: -54%;
-}
-
-#radio5:checked ~ .primeiro{
-    margin-left: -72%;
-}
 
 /*=======PARTE DE BENEFÍCIOS========*/
-
-.beneficios{
-    display: flex;
-    flex-direction: column;
-}
 
 .icons{
     padding-top: 20px;
@@ -254,55 +143,18 @@ section.slider{
     transition: .2s;
 }
 
-.titulo-beneficios{
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 25px;
-}
-
 .titulo-beneficios h1{
-    font-family: "Poppins", sans-serif;
-    font-size: 2em;
-    font-weight: 700;
+    font: 700 34px "Poppins", sans-serif;
     color: var(--laranjae);
 }
 
 .titulo-beneficios h2{
-    font-family: "Poppins", sans-serif;
-    font-size: 1.5em;
-    font-weight: 500;
+    font: 500 24px "Poppins", sans-serif;
     color: var(--laranja);
 }
 
-.conteudobene{
-    padding-bottom: 50px;
-}
 
-.container-beneficios {
-    max-width: 700px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.grade-beneficios {
-    width: calc(33.33% - 20px);
-    text-align: center;
-    margin: 10px;
-    padding-top: 10px;
-}
-
-.grade-beneficios img {
-    width: 100px;
-    padding-bottom: 10px;
-}
-
-p.mobile{
-    display: none;
-}
-
-.grade-beneficios p{
+.txt-bene{
     font-size: 20px;
     font-weight: 500;
     color: var(--preto);
@@ -460,7 +312,7 @@ p.mobile{
     font-size: 0.8rem;
 }
 
-@media screen and (max-width: 768px){
+/* @media screen and (max-width: 768px){
 
     .grade-beneficios .desktop{
         display: none;
@@ -504,7 +356,7 @@ p.mobile{
     }
 
     .nav-menu.ativo{
-        top: 95px;
+        top: 85px;
         width: 100%;
         padding: 0px;
         padding: 10px 0;
@@ -667,4 +519,4 @@ p.mobile{
         font-size: 0.8rem;
         padding-bottom: 10px;
     }
-}
+} */
