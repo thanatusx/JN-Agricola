@@ -108,61 +108,80 @@ body a{
     color: var(--laranja);
 }
 
-/*=======PARTE DE BENEFÍCIOS========*/
-
-.img-icon{
-    h1{
-        font: 600 20px "Poppins", sans-serif;
-        color: var(--branco);
-        background-color: var(--laranja);
-    }
-    h1:hover{
-        background-color: var(--vermelho);
-        transform: scale(1.04);
-        transition: .2s;
-    }
-    img:hover{
-        transform: scale(1.04);
-        transition: .2s;
-    }
-}
-
-.titulo-beneficios{
-    h1{
-        font: 700 34px "Poppins", sans-serif;
-        color: var(--laranjae);
-    }
-    h2{
-        font: 500 24px "Poppins", sans-serif;
-        color: var(--laranja);
-    }
-}
-
-.txt-bene{
-    font: 500 20px "Poppins", sans-serif;
-    color: var(--preto);
-}
-
-/* ===================QUEM SOMOS================== */
-
-.titulo-quem h1{
-    font: 600 54px "Manrope", sans-serif;
+.titulo-marcas h1{
+    font: 700 42px  "Poppins", sans-serif;
     color: var(--azul);
 }
 
-.divisa{
-    width: 1px;
-    background-color: var(--preto);
-    margin: 30px 20px;
+.card-custom{
+    width: 300px;
+    height: 450px;
+    background-color: var(--azul);
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 0 20px;
 }
 
-.textoquem p{
-    font: 300 24px "Manrope", sans-serif;
-    color: var(--preto);
-    text-indent: 30px;
+.imgcard-custom img{
+    width: 250px;
+    border-radius: 10px;
+    margin: 20px;
+    margin-top: 25px;
 }
 
-/* ================= RODAPE ================ */
+.txtcard-custom h1{
+    height: 80px;
+    margin: 0px 20px;
+    font: 500 24px/30px "Poppins", sans-serif;
+    color: var(--branco);
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#mini h1{
+    font-size: 22px;
+}
+
+.btncard-custom{
+    a{
+        font: 600 28px/30px "Poppins", sans-serif;
+        background-color: var(--branco);
+        color: var(--azul);
+        padding: 5px 19px;
+        border-radius: 5px;
+        text-align: center;
+    }
+    a:hover{
+        background-color: var(--laranja);
+        color: var(--branco);
+        transition: 0.2s;
+    }
+}
+.paginacao{
+    margin: 30px 0px;
+}
+
+.numero{
+    margin: 0px 15px;
+}
+
+.numero a{
+    display: block;
+    font: 600 30px/30px "Poppins", sans-serif;
+    background-color: var(--laranja);
+    color: var(--branco);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 10px;
+}
+
+.numero a:hover{
+    background-color: var(--vermelho);
+    transition: 0.2s;
+}
+
 
 .contato{
     h1{

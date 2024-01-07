@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="images/icons/LOGO-JN-AGRICOLA.ico">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icons/LOGO-JN-AGRICOLA.ico">
+
+    <!-- BIBLIOTECA PERSONALIZADA -->
+    <link 
+        rel="stylesheet" 
+        href="style/index.css">
+
+    <!-- BIBLIOTECA BOOTSTRAP -->
+    <link
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous">
     
-        <!-- BIBLIOTECA PERSONALIZADA -->
-        <link 
-            rel="stylesheet" 
-            href="style/index.css">
-    
-        <!-- BIBLIOTECA BOOTSTRAP -->
-        <link
-            rel="stylesheet" 
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
-            crossorigin="anonymous">
-        
-        <!-- BIBLIOTECA FONT AWESOME -->
-        <link 
-            rel="stylesheet" 
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
-            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
-            crossorigin="anonymous" 
-            referrerpolicy="no-referrer"/>
-    
-        <title>Home | JN Agrícola</title>
-    </head>
+    <!-- BIBLIOTECA FONT AWESOME -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"/>
+
+    <title>Home | JN Agrícola</title>
+</head>
 <body>
     <!-- ICONE WHATSAPP -->
     <div class="wpp-icon">
@@ -45,9 +45,9 @@
                 <div class="px-5 dropdown">
                     <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">PRODUTOS</a>
                     <ul class="dropdown-menu dropdown-menu-css text-center">
-                      <li><a class="p-3 dropdown-item" href="#">VIDROS</a></li>
-                      <li><a class="p-3 dropdown-item" href="#">AR CONDICIONADO</a></li>
-                      <li><a class="p-3 dropdown-item" href="#">OUTROS</a></li>
+                      <li><a class="p-3 dropdown-item" href="vidros-1.html">VIDROS</a></li>
+                      <li><a class="p-3 dropdown-item" href="arcondicionado.html">AR CONDICIONADO</a></li>
+                      <li><a class="p-3 dropdown-item" href="outros.html">OUTROS</a></li>
                     </ul>
                   </div>
                 <li class="px-5 nav-item"><a href="#promessa-forte">A JN AGRÍCOLA</a></li>
@@ -63,12 +63,12 @@
             </div>
             <ul class="nav-menu text-center mt-3 px-0 z-3">
                 <li class="py-3"><a href="index.html">HOME</a></li>
-                <li class="py-3"><a href="#">VIDROS</a></li>
-                <li class="py-3"><a href="#">AR CONDICIONADO</a></li>
-                <li class="py-3"><a href="#">OUTROS</a></li>
+                <li class="py-3"><a href="vidro-1.html">VIDROS</a></li>
+                <li class="py-3"><a href="arcondicionado.html">AR CONDICIONADO</a></li>
+                <li class="py-3"><a href="outros.html">OUTROS</a></li>
                 <li class="py-3"><a href="#promessa-forte">A JN AGRÍCOLA</a></li>
             </ul>
-            <div class="menu m-0">
+            <div class="menu me-4">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -124,193 +124,304 @@
         </div>
     </section>
 
-    <section class="buttons">
-        <div class="icons">
-            <div class="img-icon">
-                <a class="img-fluid" href="produtos-1.html">
-                <img src="images/icons/Rodoviario.webp">
-                <h1>Rodoviário</h1></a>
-            </div>
-            <div class="img-icon">
-                <a class="img-fluid" href="produtos-1.html">
-                <img src="images/icons/Agricola.webp">
-                <h1>Agricola</h1></a>
-            </div>
-            <div class="img-icon">
-                <a class="img-fluid" href="produtos-1.html">
-                <img src="images/icons/Industrial.webp">
-                <h1>Industrial</h1></a>
-            </div>
-            <div class="img-icon">
-                <a class="img-fluid" href="produtos-1.html">
-                <img src="images/icons/Florestal.webp">
-                <h1>Florestal</h1></a>
+    <!-- BOTÕES DESKTOP -->
+    <section class="buttons d-none d-md-none d-lg-block">
+        <div class="text-center  container align-items-center">
+            <div class="row" style="margin: 20px 100px">
+                <div class="img-icon col-2">
+                    <a class="img-fluid" href="produtos-1.html">
+                    <img src="images/icons/Rodoviario.webp" width="100px">
+                    <h1 class="p-1 rounded-pill">Rodoviário</h1></a>
+                </div>
+                <div class="img-icon col-2">
+                    <a class="img-fluid" href="produtos-1.html">
+                    <img src="images/icons/Agricola.webp" width="100px">
+                    <h1 class="p-1 rounded-pill">Agricola</h1></a>
+                </div>
+                <div class="img-icon col-2">
+                    <a class="img-fluid" href="produtos-1.html">
+                    <img src="images/icons/Industrial.webp" width="100px">
+                    <h1 class="p-1 rounded-pill">Industrial</h1></a>
+                </div>
+                <div class="img-icon col-2">
+                    <a class="img-fluid" href="produtos-1.html">
+                    <img src="images/icons/Florestal.webp" width="100px">
+                    <h1 class="p-1 rounded-pill">Florestal</h1></a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="beneficios">
+    <!-- BOTÕES MOBILE -->
+    <section class="buttons d-md-block d-lg-none">
+        <div class="text-center  container align-items-center">
+            <div class="row" style="margin: 20px;">
+                <div class="img-icon col-5">
+                    <a href="produtos-1.html">
+                    <img class="img-fluid" src="images/icons/Rodoviario.webp" width="100px">
+                    <h1 class="p-1 rounded-pill" style="font-size: 16px;">Rodoviário</h1></a>
+                </div>
+                <div class="img-icon col-5">
+                    <a href="produtos-1.html">
+                    <img class="img-fluid" src="images/icons/Agricola.webp" width="100px">
+                    <h1 class="p-1 rounded-pill" style="font-size: 16px;">Agricola</h1></a>
+                </div>
+            </div>
+            <div class="row" style="margin: 20px;">
+                <div class="img-icon col-5">
+                    <a class="img-fluid" href="produtos-1.html">
+                    <img class="img-fluid" src="images/icons/Industrial.webp" width="100px">
+                    <h1 class="p-1 rounded-pill" style="font-size: 16px;">Industrial</h1></a>
+                </div>
+                <div class="img-icon col-5">
+                    <a href="produtos-1.html">
+                    <img class="img-fluid" src="images/icons/Florestal.webp" width="100px">
+                    <h1 class="p-1 rounded-pill" style="font-size: 16px;">Florestal</h1></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFÍCIOS DESKTOP -->
+    <section class="beneficios d-none d-md-none d-lg-block">
         <div class="titulo-beneficios text-center py-5">
             <h1>Conheça os benefícios de ser um cliente da JN Agrícola!</h1>
             <h2>Entre em contato conosco!</h2>
         </div>
         <div class="container text-center col-12">
             <div class="row" style="margin: 0 285px;">
-                <div class="grid col">
-                    <div class="container-grid my-5">
-                        <img class="img-grid img-fluid mb-3" src="images/icons/imunidade.webp" width="100">
+                <div class="col">
+                    <div class="my-5">
+                        <img class="img-fluid mb-3" src="images/icons/atendimento.webp" width="100">
                         <h1 class="col-10 txt-bene">Atendimento de emergência</h1>
                     </div>
                 </div>
-                <div class="grid col">
-                    <div class="container-grid my-5">
-                        <img class="img-grid img-fluid mb-3" src="images/icons/disposicao.webp" width="100">
-                        <h1 class="col-10 txt-bene">Mais disposição</h1>
+                <div class="col">
+                    <div class=" my-5">
+                        <img class="img-fluid mb-3" src="images/icons/reparo.webp  " width="100">
+                        <h1 class="col-10 txt-bene">Velocidade no reparo</h1>
                     </div>
                 </div>
-                <div class="grid col">
-                    <div class="container-grid my-5">
-                        <img class="img-grid img-fluid mb-3" src="images/icons/celular.webp" width="100">
-                        <h1 class="col-10 txt-bene">Auxilia na reprodução celular</h1>
+                <div class="col">
+                    <div class="my-5">
+                        <img class="img-fluid mb-3" src="images/icons/preco.webp" width="100">
+                        <h1 class="col-10 txt-bene">Melhor preço da região</h1>
                     </div>
                 </div>
             </div>
             <div class="row" style="margin: 0 285px">
-                <div class="grid col">
-                    <div class="container-grid my-5">
-                        <img class="img-grid img-fluid mb-3" src="images/icons/estomago.webp" width="100">
-                        <h1 class="col-10 txt-bene">Flora Intestinal Saúdavel</h1>
+                <div class="col">
+                    <div class=" my-5">
+                        <img class="img-fluid mb-3" src="images/icons/pagamento.webp" width="100">
+                        <h1 class="col-10 txt-bene">Melhores condições de pagamento</h1>
                     </div>
                 </div>
-                <div class="grid col">
-                    <div class="container-grid my-5">
-                        <img class="img-grid img-fluid mb-3" src="images/icons/hpylori.webp" width="100">
-                        <h1 class="col-10 txt-bene">Auxilia no Combate à H-Pylori</h1>
+                <div class="col">
+                    <div class=" my-5">
+                        <img class=" img-fluid mb-3" src="images/icons/confianca.webp" width="100">
+                        <h1 class="col-10 txt-bene">Confiança no trabalho</h1>
                     </div>
                 </div>
-                <div class="grid col">
-                    <div class="container-grid my-5">
-                        <img class="img-grid img-fluid mb-3" src="images/icons/natural.webp" width="100">
-                        <h1 class="col-10 txt-bene">Produto 100% Natural</h1>
+                <div class="col">
+                    <div class="my-5">
+                        <img class="img-fluid mb-3" src="images/icons/qualidade.webp" width="100">
+                        <h1 class="col-10 txt-bene">Produto de qualidade</h1>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="prova-social">
-        <div class="relato-img">
-            <img class="img-desktop" src="images/desktop/relato.webp">
-            <img class="img-mobile" src="images/mobile/relato.webp">
+    <!-- BENEFÍCIOS MOBILE -->
+    <section class="beneficios d-md-block d-lg-none">
+        <div class="titulo-beneficios text-center py-3">
+            <h1 style="font-size: 24px;">Conheça os benefícios de ser um cliente da JN Agrícola!</h1>
+            <h2 style="font-size: 20px;">Entre em contato conosco!</h2>
+        </div>
+        <div class="container text-center col-12">
+            <div class="row my-2">
+                <div class="grid col">
+                    <div class="container-grid">
+                        <img class="img-grid img-fluid mb-3" src="images/icons/atendimento.webp" width="100">
+                        <h1 class="col-10 txt-bene" style="font-size: 16px;">Atendimento de emergência</h1>
+                    </div>
+                </div>
+                <div class="grid col">
+                    <div class="container-grid">
+                        <img class="img-grid img-fluid mb-3" src="images/icons/reparo.webp  " width="100">
+                        <h1 class="col-10 txt-bene" style="font-size: 16px;">Velocidade no reparo</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-2">
+                <div class="grid col">
+                    <div class="container-grid">
+                        <img class="img-grid img-fluid mb-3" src="images/icons/preco.webp" width="100">
+                        <h1 class="col-10 txt-bene" style="font-size: 16px;">Melhor preço da região</h1>
+                    </div>
+                </div>
+                <div class="grid col">
+                    <div class="container-grid">
+                        <img class="img-grid img-fluid mb-3" src="images/icons/pagamento.webp" width="100">
+                        <h1 class="col-10 txt-bene" style="font-size: 16px;">Melhores condições de pagamento</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-2">
+                <div class="grid col">
+                    <div class="container-grid">
+                        <img class="img-grid img-fluid mb-3" src="images/icons/confianca.webp" width="100">
+                        <h1 class="col-10 txt-bene" style="font-size: 16px;">Confiança no trabalho</h1>
+                    </div>
+                </div>
+                <div class="grid col">
+                    <div class="container-grid">
+                        <img class="img-grid img-fluid mb-3" src="images/icons/qualidade.webp" width="100">
+                        <h1 class="col-10 txt-bene" style="font-size: 16px;">Produto de qualidade</h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="promessa-forte" id="promessa-forte">
-        <div class="titulo-quem">
+    <!-- RELATO DESKTOP -->
+    <section class="relato d-none d-md-none d-lg-block">
+        <div class="text-center" style="max-width: 2000px;">
+            <img class="img-fluid" src="images/desktop/relato.webp" width="100%">
+        </div>
+    </section>
+
+    <!-- RELATO MOBILE -->
+    <section class="relato d-md-block d-lg-none">
+        <div class="text-center">
+            <img class="img-fluid" src="images/mobile/relato.webp">
+        </div>
+    </section>
+
+    <!-- QUEM SOMOS DESKTOP -->
+    <section class="quemsomos d-none d-md-none d-lg-block" id="promessa-forte">
+        <div class="titulo-quem text-center m-5">
             <h1> A JN AGRÍCOLA</h1>
         </div>
-        <div class="quemsomosdesktop">  
-            <div class="textoquem">
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Na JN Agrícola, nosso principal propósito é atender de forma excepcional os clientes do
+        <div class="container d-flex text-center my-5">  
+            <div class="textoquem justify col-5">
+                <p>
+                    Na JN Agrícola, nosso principal propósito é atender de forma excepcional os clientes do
                     setor agrícola, oferecendo produtos e serviços de alta qualidade. Somos uma empresa
                     familiar com uma sólida experiência de mais de 10 anos no ramo agrícola.
                 </p>
-                <br>
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Localizada em Bauru, SP, a JN Agrícola é referência na região, oferecendo uma ampla linha
+                <p>
+                    Localizada em Bauru, SP, a JN Agrícola é referência na região, oferecendo uma ampla linha
                     de vidros agrícolas para máquinas nacionais e importadas, além de venda e manutenção de
                     ar condicionado de linha agrícola e pesada. Também realizamos conserto e manutenção de
                     placas, módulos e joystick, garantindo a qualidade e o funcionamento correto desses
                     componentes.
                 </p>
-                <br>
                 <p>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nosso foco está no atendimento personalizado e na entrega de soluções eficientes para
+                     Nosso foco está no atendimento personalizado e na entrega de soluções eficientes para
                     cada cliente. Valorizamos o pré e pós venda, oferecendo total assistência e prioridade para
                     atender às necessidades individuais de cada um.
                 </p>
-                <br>
                 <p>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nossos principais valores são a transparência, confiança e comprometimento em
+                    Nossos principais valores são a transparência, confiança e comprometimento em
                     proporcionar a melhor experiência aos nossos clientes. Temos orgulho de oferecer um
                     atendimento de qualidade, desde o primeiro contato até o pós venda, com uma equipe
                     qualificada e pronta para auxiliar em qualquer necessidade.
                 </p>
             </div>
             <div class="divisa"></div>
-            <div class="textoquem">
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Quanto aos planos futuros da JN Agrícola, estamos sempre em busca de aprimorar nossos
+            <div class="textoquem justify col-5">
+                <p>
+                    Quanto aos planos futuros da JN Agrícola, estamos sempre em busca de aprimorar nossos
                     produtos e serviços, buscando a satisfação plena de nossos clientes. Estamos cientes das
                     questões ambientais e da importância da sustentabilidade, por isso fazemos o possível para
                     minimizar o impacto ambiental em nossas operações e atividades.
                 </p>
-                <br>
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Na visão da empresa, os clientes devem escolher a JN Agrícola pela qualidade de nossos
+                <p>
+                    Na visão da empresa, os clientes devem escolher a JN Agrícola pela qualidade de nossos
                     produtos, a excelência de nossos serviços e pela equipe engajada em proporcionar a
                     melhor experiência possível. Além disso, oferecemos os melhores preços do mercado,
                     garantindo um excelente custo-benefício aos nossos clientes.
                 </p>
-                <br>
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Se você procura vidros agrícolas, ar condicionado ou serviços especiais com o melhor
+                <p>
+                    Se você procura vidros agrícolas, ar condicionado ou serviços especiais com o melhor
                     atendimento e qualidade, a JN Agrícola é a escolha certa. Entre em contato conosco e
                     descubra como podemos atender às suas necessidades de maneira eficiente e
                     diferenciada.
                 </p>
             </div>
         </div>
-        <div class="quemsomosmobile">
-            <p> Na JN Agrícola, nosso principal propósito é atender de forma excepcional os clientes do
-                setor agrícola, oferecendo produtos e serviços de alta qualidade. Somos uma empresa
-                familiar com uma sólida experiência de mais de 10 anos no ramo agrícola.
-            </p>
-            <br>
-            <p> Localizada em Bauru, SP, a JN Agrícola é referência na região, oferecendo uma ampla linha
-                de vidros agrícolas para máquinas nacionais e importadas, além de venda e manutenção de
-                ar condicionado de linha agrícola e pesada. Também realizamos conserto e manutenção de
-                placas, módulos e joystick, garantindo a qualidade e o funcionamento correto desses
-                componentes.
-            </p>
-            <br>
-            <p>
-                 Nosso foco está no atendimento personalizado e na entrega de soluções eficientes para
-                cada cliente. Valorizamos o pré e pós venda, oferecendo total assistência e prioridade para
-                atender às necessidades individuais de cada um.
-            </p>
-            <br>
-            <p>
-                 Nossos principais valores são a transparência, confiança e comprometimento em
-                proporcionar a melhor experiência aos nossos clientes. Temos orgulho de oferecer um
-                atendimento de qualidade, desde o primeiro contato até o pós venda, com uma equipe
-                qualificada e pronta para auxiliar em qualquer necessidade.
-            </p>
-            <br>
-            <p>  Quanto aos planos futuros da JN Agrícola, estamos sempre em busca de aprimorar nossos
-                produtos e serviços, buscando a satisfação plena de nossos clientes. Estamos cientes das
-                questões ambientais e da importância da sustentabilidade, por isso fazemos o possível para
-                minimizar o impacto ambiental em nossas operações e atividades.
-            </p>
-            <br>
-            <p>  Na visão da empresa, os clientes devem escolher a JN Agrícola pela qualidade de nossos
-                produtos, a excelência de nossos serviços e pela equipe engajada em proporcionar a
-                melhor experiência possível. Além disso, oferecemos os melhores preços do mercado,
-                garantindo um excelente custo-benefício aos nossos clientes.
-            </p>
-            <br>
-            <p>  Se você procura vidros agrícolas, ar condicionado ou serviços especiais com o melhor
-                atendimento e qualidade, a JN Agrícola é a escolha certa. Entre em contato conosco e
-                descubra como podemos atender às suas necessidades de maneira eficiente e
-                diferenciada.
-            </p>
+    </section>
+
+    <!-- QUEM SOMOS MOBILE -->
+    <section class="quemsomos d-md-block d-lg-none" id="promessa-forte">
+        <div class="titulo-quem text-center my-3">
+            <h1 style="font-size: 40px;"> A JN AGRÍCOLA</h1>
+        </div>
+        <div class="container d-flex text-center my-3">  
+            <div class="textoquem justify col-11">
+                <p style="font-size: 20px;">
+                    Na JN Agrícola, nosso principal propósito é atender de forma excepcional os clientes do
+                    setor agrícola, oferecendo produtos e serviços de alta qualidade. Somos uma empresa
+                    familiar com uma sólida experiência de mais de 10 anos no ramo agrícola.
+                </p>
+                <p style="font-size: 20px;">
+                    Localizada em Bauru, SP, a JN Agrícola é referência na região, oferecendo uma ampla linha
+                    de vidros agrícolas para máquinas nacionais e importadas, além de venda e manutenção de
+                    ar condicionado de linha agrícola e pesada. Também realizamos conserto e manutenção de
+                    placas, módulos e joystick, garantindo a qualidade e o funcionamento correto desses
+                    componentes.
+                </p>
+                <p style="font-size: 20px;">
+                    Nosso foco está no atendimento personalizado e na entrega de soluções eficientes para
+                    cada cliente. Valorizamos o pré e pós venda, oferecendo total assistência e prioridade para
+                    atender às necessidades individuais de cada um.
+                </p>
+                <p style="font-size: 20px;">
+                    Nossos principais valores são a transparência, confiança e comprometimento em
+                    proporcionar a melhor experiência aos nossos clientes. Temos orgulho de oferecer um
+                    atendimento de qualidade, desde o primeiro contato até o pós venda, com uma equipe
+                    qualificada e pronta para auxiliar em qualquer necessidade.
+                </p>
+                <p style="font-size: 20px;">
+                    Quanto aos planos futuros da JN Agrícola, estamos sempre em busca de aprimorar nossos
+                    produtos e serviços, buscando a satisfação plena de nossos clientes. Estamos cientes das
+                    questões ambientais e da importância da sustentabilidade, por isso fazemos o possível para
+                    minimizar o impacto ambiental em nossas operações e atividades.
+                </p>
+                <p style="font-size: 20px;">
+                    Na visão da empresa, os clientes devem escolher a JN Agrícola pela qualidade de nossos
+                    produtos, a excelência de nossos serviços e pela equipe engajada em proporcionar a
+                    melhor experiência possível. Além disso, oferecemos os melhores preços do mercado,
+                    garantindo um excelente custo-benefício aos nossos clientes.
+                </p>
+                <p style="font-size: 20px;">
+                    Se você procura vidros agrícolas, ar condicionado ou serviços especiais com o melhor
+                    atendimento e qualidade, a JN Agrícola é a escolha certa. Entre em contato conosco e
+                    descubra como podemos atender às suas necessidades de maneira eficiente e
+                    diferenciada.
+                </p>
+            </div>
         </div>
     </section>
 
-    <section class="siga-nos">
-        <div class="siga-img">
-            <img src="images/desktop/siganos.webp">
-    </div>
+    <!-- SIGA DESKTOP -->
+    <section class="siga d-none d-md-none d-lg-block">
+        <div class="text-center" style="max-width: 2000px;">
+            <img class="img-fluid" src="images/desktop/siganos.webp" width="100%">
+        </div>
     </section>
 
-    <footer class="rodape">
-        <div class="dadoscontato">
+    <!-- SIGA MOBILE -->
+    <section class="siga d-md-block d-lg-none">
+        <div class="text-center">
+            <img class="img-fluid" src="images/desktop/siganos.webp" width="100%">
+        </div>
+    </section>
+
+    <!-- RODAPE DESKTOP -->
+    <footer class="rodape text-center d-none d-md-none d-lg-block" style="background-color: var(--azul);">
+        <div class="dadoscontato container d-flex pt-5">
             <div class="contato">
                 <h1>ENTRE EM <span>CONTATO</span></h1>
                 <h2><span>WhatsApp:</span> (14) 4141-7973</h2>
@@ -318,7 +429,7 @@
             </div>
             <div class="redes">
                 <h1> REDES SOCIAIS</h1>
-                <div class="redes-container">
+                <div class="redes-container d-flex mt-3">
                     <div class="img-redes">
                         <a href="https://www.facebook.com/jngricola/"><img src="images/icons/facebook.webp"></a>
                     </div>
@@ -332,11 +443,43 @@
                 <a href="https://www.google.com/maps/place/JN+AGR%C3%8DCOLA+-+VIDROS+AGR%C3%8DCOLAS+E+AR+CONDICIONADO/@-22.3145117,-49.0709945,15z/data=!4m2!3m1!1s0x0:0x2f2b4de131d51b9f?sa=X&ved=2ahUKEwjT2NCC77mCAxV8rpUCHXtCBxoQ_BJ6BAg2EAA">Praça Washington Luiz, 1-05 - Centro<br> Bauru - SP, 17010-210</a>
             </div>
         </div>
-        <div class="direitos">
-            <h1>Copyright © 2023 JN Agrícola - Todos os direitos reservados.</h1>
-            <h1>Desenvolvido por Deu Mídia, Gustavo Franco.</h1>
+        <div class="direitos" style="padding: 100px 0 5px 0;">
+            <h1 class="mb-0">Copyright © 2023 JN Agrícola - Todos os direitos reservados.</h1>
+            <h1>Desenvolvido por Deu Mídia,<a href="https://github.com/thanatusx"> Gustavo Franco</a>.</h1>
         </div>
     </footer>
+
+    <!-- RODAPE MOBILE -->
+    <footer class="rodape text-center d-md-block d-lg-none" style="background-color: var(--azul);">
+        <div class="dadoscontato container pt-3">
+            <div class="contato">
+                <h1 style="font-size: 24px;">ENTRE EM <span>CONTATO</span></h1>
+                <h2 style="font-size: 14px;"><span>WhatsApp:</span> (14) 4141-7973</h2>
+                <h2 style="font-size: 14px;"><span>E-mail:</span> jnagricola2@gmail.com</h2>
+            </div>
+            <div class="redes">
+                <h1 style="font-size: 24px;"> REDES SOCIAIS</h1>
+                <div class="redes-container d-flex mb-3">
+                    <div class="img-redes me-3">
+                        <a href="https://www.facebook.com/jngricola/"><img src="images/icons/facebook.webp" width="50px"></a>
+                    </div>
+                    <div class="img-redes ms-3">
+                        <a href="https://www.instagram.com/jnagricola_/"><img src="images/icons/instagram.webp" width="50px"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="endereco">
+                <h1 style="font-size: 24px;">ENDEREÇO</h1>
+                <a  style="font-size: 16px;" href="https://www.google.com/maps/place/JN+AGR%C3%8DCOLA+-+VIDROS+AGR%C3%8DCOLAS+E+AR+CONDICIONADO/@-22.3145117,-49.0709945,15z/data=!4m2!3m1!1s0x0:0x2f2b4de131d51b9f?sa=X&ved=2ahUKEwjT2NCC77mCAxV8rpUCHXtCBxoQ_BJ6BAg2EAA">Praça Washington Luiz, 1-05 - Centro<br> Bauru - SP, 17010-210</a>
+            </div>
+        </div>
+        <div class="direitos" style="padding: 50px 0 5px 0;">
+            <h1 class="mb-0">Copyright © 2023 JN Agrícola - Todos os direitos reservados.</h1>
+            <h1>Desenvolvido por Deu Mídia,<a href="https://github.com/thanatusx"> Gustavo Franco</a>.</h1>
+        </div>
+    </footer>
+
+    <!-- BIBLIOTECA PERSONALIZADA -->
     <script src="script/index.js"></script>
 
     <!-- BOOTSTRAP JS -->
