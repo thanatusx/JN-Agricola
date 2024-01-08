@@ -101,11 +101,28 @@ body a{
 
 .dropdown-menu-css{
     background-color: var(--azul) !important;
-}
-
-.dropdown-menu-css a:hover{
+a:hover{
     background-color: var(--azul);
     color: var(--laranja);
+}
+
+}
+
+.img-icon{
+    h1{
+        font: 600 20px "Poppins", sans-serif;
+        color: var(--branco);
+        background-color: var(--laranja);
+    }
+    h1:hover{
+        background-color: var(--vermelho);
+        transform: scale(1.04);
+        transition: .2s;
+    }
+    img:hover{
+        transform: scale(1.04);
+        transition: .2s;
+    }
 }
 
 .titulo-marcas h1{
@@ -119,19 +136,19 @@ body a{
     background-color: var(--azul);
     flex-direction: column;
     border-radius: 5px;
-    margin: 0 20px;
+    padding: 0;
+    margin: 5px 0px;
 }
 
 .imgcard-custom img{
     width: 250px;
-    border-radius: 10px;
-    margin: 20px;
+    border-radius: 5px 5px 0 0;
     margin-top: 25px;
 }
 
 .txtcard-custom h1{
-    height: 80px;
-    margin: 0px 20px;
+    height: 90px;
+    margin: 20px 20px 0px 20px;
     font: 500 24px/30px "Poppins", sans-serif;
     color: var(--branco);
     padding-bottom: 20px;
@@ -156,11 +173,11 @@ body a{
 
 .paginacao{
     margin: 30px 0px;
-    display: flex !important;
+    display: flex;
 }
 
 .numero{
-    margin: 20px 0px;
+    margin: 0px 15px;
     a{
         display: block;
         font: 600 30px/30px "Poppins", sans-serif;
@@ -184,18 +201,18 @@ body a{
     background-color: var(--azul);
     flex-direction: column;
     border-radius: 5px;
-    margin: 0 10px;
+    margin: 5px 5px;
 }
 
 .imgcardmobile-custom img{
     width: 150px;
     border-radius: 10px;
-    margin: 10px;
+    margin-top: 10px;
 }
 
 .txtcardmobile-custom h1{
     height: 55px;
-    margin: 0px 8px;
+    margin: 10px 8px 0px 8px;
     font: 500 16px/20px "Poppins", sans-serif;
     color: var(--branco);
     
@@ -223,7 +240,7 @@ body a{
 }
 
 .numeromobile{
-    margin: 0px 10px;
+    margin: 0px 5px;
     a{
         display: block;
         font: 600 18px/10px "Poppins", sans-serif;
