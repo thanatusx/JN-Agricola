@@ -212,6 +212,7 @@ body a{
     }
     a:hover{
         color: var(--laranja);
+        transition: .2s;
     }
     h1{
         font: 300 12px "Manrope", sans-serif;

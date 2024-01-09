@@ -130,6 +130,11 @@ a:hover{
     color: var(--azul);
 }
 
+.produtos{
+    display: flex;
+    justify-content: center;
+}
+
 .card-custom{
     width: 300px;
     height: 450px;
@@ -137,7 +142,14 @@ a:hover{
     flex-direction: column;
     border-radius: 5px;
     padding: 0;
-    margin: 5px 0px;
+    margin: 10px 10px;
+    text-align: center;
+}
+
+.vazio{
+    width: 300px;
+    height: 450px;
+    margin: 10px 10px;
 }
 
 .imgcard-custom img{
@@ -172,12 +184,14 @@ a:hover{
 }
 
 .paginacao{
-    margin: 30px 0px;
+    justify-content: center;
     display: flex;
+    margin: 20px 0;
 }
 
 .numero{
-    margin: 0px 15px;
+    margin: 0px 10px;
+    padding: 0;
     a{
         display: block;
         font: 600 30px/30px "Poppins", sans-serif;
@@ -201,6 +215,12 @@ a:hover{
     background-color: var(--azul);
     flex-direction: column;
     border-radius: 5px;
+    margin: 5px 5px;
+}
+
+.vaziomobile{
+    width: 175px;
+    height: 275px;
     margin: 5px 5px;
 }
 
@@ -237,6 +257,8 @@ a:hover{
 
 .paginacaomobile{
     margin: 20px 0px;
+    justify-content: center;
+    display: flex;
 }
 
 .numeromobile{
@@ -255,6 +277,24 @@ a:hover{
     a:hover{
         background-color: var(--vermelho);
         transition: 0.2s;
+    }
+}
+
+.faleconosco{
+    text-align: center;
+    margin: 30px 0;
+    h1{
+        font: 700 26px/20px "Poppins", sans-serif;
+        color: var(--laranjae);
+    }
+    a{
+        font: 500 22px/20px "Poppins", sans-serif;
+        color: var(--laranja);
+        text-decoration: underline;
+    }
+    a:hover{
+        color: var(--vermelho);
+        transition: .2s;
     }
 }
 
@@ -306,6 +346,7 @@ a:hover{
     }
     a:hover{
         color: var(--laranja);
+        transition: .2s;
     }
     h1{
         font: 300 12px "Manrope", sans-serif;

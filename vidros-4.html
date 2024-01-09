@@ -2,282 +2,509 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style/produtos-4.css" rel="stylesheet">
     <link rel="icon" href="images/icons/LOGO-JN-AGRICOLA.ico">
 
-    <title>Produtos • 4 | JN Agrícola</title>
+    <!-- BIBLIOTECA PERSONALIZADA -->
+        <link 
+        rel="stylesheet" 
+        href="style/vidros.css">
+
+    <!-- BIBLIOTECA BOOTSTRAP -->
+    <link
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous">
+    
+    <!-- BIBLIOTECA FONT AWESOME -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"/>
+
+    <title>Vidros • 4 | JN Agrícola</title>
 </head>
 <body>
-    <div id="wpp-icon">
-        <a  href="https://api.whatsapp.com/send?phone=551441417973&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!"><img id="wpp" src="images/icons/WhatsApp.png"></a>
+    <div class="wpp-icon">
+        <a href="https://api.whatsapp.com/send?phone=551441417973&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!"><img class="z-3" id="wpp" src="images/icons/WhatsApp.webp" width="55px"></a>
     </div>
 
-    <header class="header">
-        <nav class="navbar">
-            <div class="img-logo">
-                <a class="logo" href="index.html"><img src="images/icons/logo-jn.png"></a>
+    <!-- NAVBAR DESKTOP -->
+    <header class="header py-2 d-none d-md-none d-lg-block" style="background-color: var(--azul);">
+        <nav class="navbar navbar-custom container d-flex align-items-center">
+            <div class="ms-4">
+                <a href="index.html"><img src="images/icons/logo-jn.webp" width="80px"></a>
             </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html">HOME</a></li>
-                <li class="nav-item"><a href="produtos-1.html">PRODUTOS</a></li>
-                <li class="nav-item"><a href="index.html#promessa-forte">A JN AGRÍCOLA</a></li>
+            <ul class="text-center d-flex mt-3 me-0">
+                <li class="px-5 nav-item"><a href="index.html">HOME</a></li>
+                <div class="px-5 dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">PRODUTOS</a>
+                    <ul class="dropdown-menu dropdown-menu-css text-center">
+                      <li><a class="p-3 dropdown-item" href="vidros-1.html">VIDROS</a></li>
+                      <li><a class="p-3 dropdown-item" href="arcondicionado.html">AR CONDICIONADO</a></li>
+                      <li><a class="p-3 dropdown-item" href="outros.html">OUTROS</a></li>
+                    </ul>
+                  </div>
+                <li class="px-5 nav-item"><a href="#promessa-forte">A JN AGRÍCOLA</a></li>
             </ul>
-            <div class="menu">
+        </nav>
+    </header>
+
+    <!-- NAVBAR MOBILE -->
+    <header class="header py-2 d-md-block d-lg-none" style="background-color: var(--azul);">
+        <nav class="navbar navbar-custom container d-flex">
+            <div class="ms-4">
+                <a href="index.html"><img src="images/icons/logo-jn.webp" width="80px"></a>
+            </div>
+            <ul class="nav-menu text-center mt-3 px-0 z-3">
+                <li class="py-3"><a href="index.html">HOME</a></li>
+                <li class="py-3"><a href="vidro-1.html">VIDROS</a></li>
+                <li class="py-3"><a href="arcondicionado.html">AR CONDICIONADO</a></li>
+                <li class="py-3"><a href="outros.html">OUTROS</a></li>
+                <li class="py-3"><a href="#promessa-forte">A JN AGRÍCOLA</a></li>
+            </ul>
+            <div class="menu me-4">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
         </nav>
+        
+
     </header>
-    <section class="produtosbanner">
-        <div class="prod-img">
-            <img class="img-desktop" src="images/desktop/produtos.png">
-            <img class="img-mobile" src="images/mobile/produtos.png">
+
+    <!-- BANNER DESKTOP -->
+    <section class="relato d-none d-md-none d-lg-block">
+        <div class="text-center" style="max-width: 2000px;">
+            <img class="img-fluid" src="images/desktop/produtos.webp" width="100%">
         </div>
     </section>
 
-    <section class="marcas">
-        <div class="titulo-marcas">
+    <!-- BANNER MOBILE -->
+    <section class="relato d-md-block d-lg-none">
+        <div class="text-center">
+            <img class="img-fluid" src="images/mobile/produtos.webp">
+        </div>
+    </section>
+
+    <!-- BOTÕES DESKTOP -->
+    <section class="buttons d-none d-md-none d-lg-block">
+        <div class="text-center  container align-items-center my-5">
+            <div class="row" style="margin: 20px 100px">
+                <div class="img-icon col-2">
+                    <a class="img-fluid" href="produtos-1.html">
+                    <img src="images/icons/Rodoviario.webp" width="100px">
+                    <h1 class="p-1 rounded-pill">Rodoviário</h1></a>
+                </div>
+                <div class="img-icon col-2">
+                    <a class="img-fluid" href="produtos-1.html">
+                    <img src="images/icons/Agricola.webp" width="100px">
+                    <h1 class="p-1 rounded-pill">Agricola</h1></a>
+                </div>
+                <div class="img-icon col-2">
+                    <a class="img-fluid" href="produtos-1.html">
+                    <img src="images/icons/Industrial.webp" width="100px">
+                    <h1 class="p-1 rounded-pill">Industrial</h1></a>
+                </div>
+                <div class="img-icon col-2">
+                    <a class="img-fluid" href="produtos-1.html">
+                    <img class="mb-1" src="images/icons/Florestal.webp" width="100px">
+                    <h1 class="p-1 rounded-pill">Florestal</h1></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOTÕES MOBILE -->
+    <section class="buttons d-md-block d-lg-none">
+        <div class="text-center  container align-items-center">
+            <div class="row" style="margin: 20px;">
+                <div class="img-icon col-5">
+                    <a href="produtos-1.html">
+                    <img class="img-fluid" src="images/icons/Rodoviario.webp" width="100px">
+                    <h1 class="p-1 rounded-pill" style="font-size: 16px;">Rodoviário</h1></a>
+                </div>
+                <div class="img-icon col-5">
+                    <a href="produtos-1.html">
+                    <img class="img-fluid" src="images/icons/Agricola.webp" width="100px">
+                    <h1 class="p-1 rounded-pill" style="font-size: 16px;">Agricola</h1></a>
+                </div>
+            </div>
+            <div class="row" style="margin: 20px;">
+                <div class="img-icon col-5">
+                    <a class="img-fluid" href="produtos-1.html">
+                    <img class="img-fluid" src="images/icons/Industrial.webp" width="100px">
+                    <h1 class="p-1 rounded-pill" style="font-size: 16px;">Industrial</h1></a>
+                </div>
+                <div class="img-icon col-5">
+                    <a href="produtos-1.html">
+                    <img class="img-fluid" src="images/icons/Florestal.webp" width="100px">
+                    <h1 class="p-1 rounded-pill" style="font-size: 16px;">Florestal</h1></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARCAS DESKTOP -->
+    <section class="marcas d-none d-md-none d-lg-block">
+        <div class="titulo-marcas text-center my-3">
             <h1>PRINCIPAIS MARCAS QUE TRABALHAMOS</h1>
         </div>
-        <div class="container-marcas">
-            <div class="marcas-img">
-                <img src="images/marcas/CASE.png">
+        <div class="container col-12 my-3 mb-5">
+            <div class="row text-center">
+                <div class="col p-0">
+                    <img src="images/marcas/CASE.webp" width="100%">
+                </div>
+                <div class="col p-0">
+                    <img src="images/marcas/CAT.webp" width="100%">
+                </div>
+                <div class="col p-0">
+                    <img src="images/marcas/DAF.webp" width="100%">
+                </div>
+                <div class="col p-0">
+                    <img src="images/marcas/JCB.webp" width="100%">
+                </div>
+                <div class="col p-0">
+                    <img src="images/marcas/VALTRA.webp" width="100%">
+                </div>
+                <div class="col p-0">
+                    <img src="images/marcas/VOLVO.webp" width="100%">
+                </div>
+                <div class="col p-0">
+                    <img src="images/marcas/NEWHOLLAND.webp" width="100%">
+                </div>
             </div>
-            <div class="marcas-img">
-                <img src="images/marcas/HYUNDAI.png">
-            </div>
-            <div class="marcas-img">
-                <img src="images/marcas/VALTRA.png">
-            </div>
-            <div class="marcas-img">
-                <img src="images/marcas/VOLVO.png">
-            </div>
-            <div class="marcas-img">
-                <img src="images/marcas/JCB.png">
-            </div>
-            <div class="marcas-img">
-                <img src="images/marcas/JOHNDEERE.png">
-            </div>
-            <div class="marcas-img">
-                <img src="images/marcas/LS.png">
-            </div>
-            <div class="marcas-img">
-                <img src="images/marcas/MASSEY.png">
-            </div>
-            <div class="marcas-img">
-                <img src="images/marcas/CAT.png">
-            </div>
-            <div class="marcas-img">
-                <img src="images/marcas/NEWHOLLAND.png">
-            </div>
-            <div class="marcas-img">
-                <img src="images/marcas/WOLKSWAGEM.png">
-            </div>
-            <div class="marcas-img">
-                <img src="images/marcas/DAF.png">
-            </div>
-            <div class="marcas-img mobile"></div>
-            <div class="marcas-img">
-                <img src="images/marcas/MERCEDES.png">
-            </div>
-            <div class="marcas-img">
-                <img src="images/marcas/SCANIA.png">
+            <div class="row text-center">
+                <div class="col p-0">
+                    <img src="images/marcas/MASSEY.webp" width="100%">
+                </div>
+                <div class="col p-0">
+                    <img src="images/marcas/SCANIA.webp" width="100%">
+                </div>
+                <div class="col p-0">
+                    <img src="images/marcas/JOHNDEERE.webp" width="100%">
+                </div>
+                <div class="col p-0">
+                    <img src="images/marcas/MERCEDES.webp" width="100%">
+                </div>
+                <div class="col p-0">
+                    <img src="images/marcas/WOLKSWAGEM.webp" width="100%">
+                </div>
+                <div class="col p-0">
+                    <img src="images/marcas/LS.webp" width="100%">
+                </div>
+                <div class="col p-0">
+                    <img src="images/marcas/HYUNDAI.webp" width="100%">
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="gridprodutos desktop">
-        <div class="produtos">
-            <div class="card">
-                <div class="imgcard"><a href="produtos/tratornewhollandt6.html"><img src="images/produtos/TRATOR NEW HOLLAND T6.png" alt="carregadeira"></a></div>
-
-                <div class="txtcard"><a href="produtos/tratornewhollandt6.html"><h1>TRATOR NEW HOLLAND T6</h1></a></div>
-
-                <div class="btncard"><a href="produtos/tratornewhollandt6.html">Saiba mais</a></div>
-            </div>            
-            <div class="card">
-                <div class="imgcard"><a href="produtos/tratornewhollandt7.html"><img src="images/produtos/TRATOR NEW HOLLAND T7.png" alt="carregadeira"></a></div>
-
-                <div class="txtcard"><a href="produtos/tratornewhollandt7.html"><h1>TRATOR NEW HOLLAND T7</h1></a></div>
-
-                <div class="btncard"><a href="produtos/tratornewhollandt7.html">Saiba mais</a></div>
-            </div>            
-            <div class="card">
-                <div class="imgcard"><a href="produtos/tratornewhollandtl95e.html"><img src="images/produtos/TRATOR NEW HOLLAND TL95E.png" alt="carregadeira"></a></div>
-
-                <div class="txtcard"><a href="produtos/tratornewhollandtl95e.html"><h1>TRATOR NEW HOLLAND TL95E</h1></a></div>
-
-                <div class="btncard"><a href="produtos/tratornewhollandtl95e.html">Saiba mais</a></div>
-            </div>            
-            <div class="card">
-                <div class="imgcard"><a href="produtos/tratornewhollandtm.html"><img src="images/produtos/TRATOR NEW HOLLAND TM.png" alt="carregadeira"></a></div>
-
-                <div class="txtcard"><a href="produtos/tratornewhollandtm.html"><h1>TRATOR NEW HOLLAND TM</h1></a></div>
-
-                <div class="btncard"><a href="produtos/tratornewhollandtm.html">Saiba mais</a></div>
-            </div>
+    <!-- MARCAS MOBILE -->
+    <section class="marcas d-md-block d-lg-none">
+        <div class="titulo-marcas text-center my-3">
+            <h1 style="font-size: 32px;">PRINCIPAIS MARCAS QUE TRABALHAMOS</h1>
         </div>
-        <div class="produtos">
-            <div class="card">
-                <div class="imgcard"><a href="produtos/tratorvaltrabt.html"><img src="images/produtos/TRATOR VALTRA BT.png" alt="carregadeira"></a></div>
-
-                <div class="txtcard"><a href="produtos/tratorvaltrabt.html"><h1>TRATOR VALTRA BT</h1></a></div>
-
-                <div class="btncard"><a href="produtos/tratorvaltrabt.html">Saiba mais</a></div>
-            </div>            
-            <div class="card">
-                <div class="imgcard"><a href="produtos/tratorvaltrag1.html"><img src="images/produtos/TRATOR VALTRA G1.png" alt="carregadeira"></a></div>
-
-                <div class="txtcard"><a href="produtos/tratorvaltrag1.html"><h1>TRATOR VALTRA G1</h1></a></div>
-
-                <div class="btncard"><a href="produtos/tratorvaltrag1.html">Saiba mais</a></div>
-            </div>            
-            <div class="card">
-                <div class="imgcard"><a href="produtos/tratorvaltrag2.html"><img src="images/produtos/TRATOR VALTRA G2.png" alt="carregadeira"></a></div>
-
-                <div class="txtcard"><a href="produtos/tratorvaltrag2.html"><h1>TRATOR VALTRA G2</h1></a></div>
-
-                <div class="btncard"><a href="produtos/tratorvaltrag2.html">Saiba mais</a></div>
-            </div>            
-            <div class="card">
-                <div class="imgcard"><a href="produtos/tratorvaltrag3.html"><img src="images/produtos/TRATOR VALTRA G3.png" alt="carregadeira"></a></div>
-
-                <div class="txtcard"><a href="produtos/tratorvaltrag3.html"><h1>TRATOR VALTRA G3</h1></a></div>
-
-                <div class="btncard"><a href="produtos/tratorvaltrag3.html">Saiba mais</a></div>
+        <div class="container col-12 my-3 mb-5">
+            <div class="row text-center">
+                <div class="col p-0">
+                    <img src="images/marcas/CASE.webp" width="100%">
+                </div>
+                <div class="col p-0">
+                    <img src="images/marcas/CAT.webp" width="100%">
+                </div>
+                <div class="col p-0">
+                    <img src="images/marcas/DAF.webp" width="100%">
+                </div>
+                <div class="col p-0">
+                    <img src="images/marcas/JCB.webp" width="100%">
+                </div>
+                <div class="col p-0">
+                    <img src="images/marcas/VALTRA.webp" width="100%">
+                </div>
+                <div class="col p-0">
+                    <img src="images/marcas/VOLVO.webp" width="100%">
+                </div>
+                <div class="col p-0">
+                    <img src="images/marcas/NEWHOLLAND.webp" width="100%">
+                </div>
             </div>
-        </div>
-        <div class="produtos">
-            <div class="card">
-                <div class="imgcard"><a href="produtos/tratorvaltraseriea.html"><img src="images/produtos/TRATOR VALTRA SERIE A.png" alt="carregadeira"></a></div>
-
-                <div class="txtcard"><a href="produtos/tratorvaltraseriea.html"><h1>TRATOR VALTRA SERIE A</h1></a></div>
-
-                <div class="btncard"><a href="produtos/tratorvaltraseriea.html">Saiba mais</a></div>
+            <div class="row text-center">
+                <div class="col p-0">
+                    <img src="images/marcas/MASSEY.webp" width="100%">
+                </div>
+                <div class="col p-0">
+                    <img src="images/marcas/SCANIA.webp" width="100%">
+                </div>
+                <div class="col p-0">
+                    <img src="images/marcas/JOHNDEERE.webp" width="100%">
+                </div>
+                <div class="col p-0">
+                    <img src="images/marcas/MERCEDES.webp" width="100%">
+                </div>
+                <div class="col p-0">
+                    <img src="images/marcas/WOLKSWAGEM.webp" width="100%">
+                </div>
+                <div class="col p-0">
+                    <img src="images/marcas/LS.webp" width="100%">
+                </div>
+                <div class="col p-0">
+                    <img src="images/marcas/HYUNDAI.webp" width="100%">
+                </div>
             </div>
-            <div class="vazio"></div>
-            <div class="vazio"></div>
-            <div class="vazio"></div>
         </div>
     </section>
 
-    <section class="gridprodutos mobile">
-        <div class="produtos">
-            <div class="card">
-                <div class="imgcard"><a href="produtos/tratornewhollandt6.html"><img src="images/produtos/TRATOR NEW HOLLAND T6.png" alt="carregadeira"></a></div>
-
-                <div class="txtcard"><a href="produtos/tratornewhollandt6.html"><h1>TRATOR NEW HOLLAND T6</h1></a></div>
-
-                <div class="btncard"><a href="produtos/tratornewhollandt6.html">Saiba mais</a></div>
-            </div>            
-            <div class="card">
-                <div class="imgcard"><a href="produtos/tratornewhollandt7.html"><img src="images/produtos/TRATOR NEW HOLLAND T7.png" alt="carregadeira"></a></div>
-
-                <div class="txtcard"><a href="produtos/tratornewhollandt7.html"><h1>TRATOR NEW HOLLAND T7</h1></a></div>
-
-                <div class="btncard"><a href="produtos/tratornewhollandt7.html">Saiba mais</a></div>
+    <!-- PRODUTOS DESKTOP -->
+    <section class="gridprodutos d-none d-lg-block d-md-none ">
+        <div class="container text-center">
+            <div class="produtos">
+                <div class="card-custom">
+                    <div class="imgcard-custom"><a href="produtos/pulverizadorcaseihpatriot350.html"><img class="img-fluid" src="images/produtos/rodoviario/rodoviariovan.webp"></a></div>
+                    <div class="txtcard-custom"><a href="produtos/pulverizadorcaseihpatriot350.html"><h1>RODOVIÁRIO VAN</h1></a></div>
+                    <div class="btncard-custom"><a href="produtos/pulverizadorcaseihpatriot350.html">Saiba mais</a></div>
+                </div>
+                <div class="card-custom">
+                    <div class="imgcard-custom"><a href="produtos/pulverizadordefensornewholland.html"><img class="img-fluid" src="images/produtos/rodoviario/rodoviariovolks.webp"></a></div>
+                    <div class="txtcard-custom"><a href="produtos/pulverizadordefensornewholland.html"><h1>RODOVIÁRIO VOLKSWAGEM</h1></a></div>
+                    <div class="btncard-custom"><a href="produtos/pulverizadordefensornewholland.html">Saiba mais</a></div>
+                </div>
+                <div class="card-custom">
+                    <div class="imgcard-custom"><a href="produtos/pulverizadorjactouniport.html"><img class="img-fluid" src="images/produtos/rodoviario/rodoviariovolvo.webp"></a></div>
+                    <div class="txtcard-custom"><a href="produtos/pulverizadorjactouniport.html"><h1>RODOVIÁRIO VOLVO</h1></a></div>
+                    <div class="btncard-custom"><a href="produtos/pulverizadorjactouniport.html">Saiba mais</a></div>
+                </div>
+                <div class="card-custom">
+                    <div class="imgcard-custom"><a href="produtos/retroescavadeira3cxescavadeira.html"><img class="img-fluid" src="images/produtos/industrial/rolocompactador116djcb.webp"></a></div>
+                    <div class="txtcard-custom"><a href="produtos/retroescavadeira3cxescavadeira.html"><h1>ROLO COMPACTADOR 116D JCB</h1></a></div>
+                    <div class="btncard-custom"><a href="produtos/retroescavadeira3cxescavadeira.html">Saiba mais</a></div>
+                </div>
+            </div>
+            <div class="produtos">
+                <div class="card-custom">
+                    <div class="imgcard-custom"><a href="produtos/retroescavadeira580ncase.html"><img class="img-fluid" src="images/produtos/industrial/rolocompactador612hliugong.webp"></a></div>
+                    <div class="txtcard-custom"><a href="produtos/retroescavadeira580ncase.html"><h1>ROLO COMPACTADOR 612H LIUGONG</h1></a></div>
+                    <div class="btncard-custom"><a href="produtos/retroescavadeira580ncase.html">Saiba mais</a></div>
+                </div>
+                <div class="card-custom">
+                    <div class="imgcard-custom"><a href="produtos/retroescavadeirab60volvo.html"><img class="img-fluid" src="images/produtos/industrial/rolocompactadordynapac.webp"></a></div>
+                    <div class="txtcard-custom"><a href="produtos/retroescavadeirab60volvo.html"><h1>ROLO COMPACTADOR DYNAPAC</h1></a></div>
+                    <div class="btncard-custom"><a href="produtos/retroescavadeirab60volvo.html">Saiba mais</a></div>
+                </div>
+                <div class="card-custom">
+                    <div class="imgcard-custom"><a href="produtos/retroescavadeirab95bnewholland.html"><img class="img-fluid" src="images/produtos/agricola/tratorcasefarmall.webp"></a></div>
+                    <div class="txtcard-custom"><a href="produtos/retroescavadeirab95bnewholland.html"><h1>TRATOR CASE FARMALL</h1></a></div>
+                    <div class="btncard-custom"><a href="produtos/retroescavadeirab95bnewholland.html">Saiba mais</a></div>
+                </div>
+                <div class="card-custom">
+                    <div class="imgcard-custom"><a href="produtos/retroescavadeiracaterpillar416e.html"><img class="img-fluid" src="images/produtos/agricola/tratorcasemagnum240.webp"></a></div>
+                    <div class="txtcard-custom"><a href="produtos/retroescavadeiracaterpillar416e.html"><h1>TRATOR CASE MAGNUM 240</h1></a></div>
+                    <div class="btncard-custom"><a href="produtos/retroescavadeiracaterpillar416e.html">Saiba mais</a></div>
+                </div>
+            </div>
+            <div class="produtos">
+                <div class="card-custom">
+                    <div class="imgcard-custom"><a href="produtos/retroescavadeirajhondeere.html"><img class="img-fluid" src="images/produtos/agricola/tratorcasemx100.webp"></a></div>
+                    <div class="txtcard-custom"><a href="produtos/retroescavadeirajhondeere.html"><h1>TRATOR CASE MX 100</h1></a></div>
+                    <div class="btncard-custom"><a href="produtos/retroescavadeirajhondeere.html">Saiba mais</a></div>
+                </div>
+                <div class="card-custom">
+                    <div class="imgcard-custom"><a href="produtos/rodoviariodaf.html"><img class="img-fluid" src="images/produtos/agricola/tratorcasemxm180.webp"></a></div>
+                    <div class="txtcard-custom"><a href="produtos/rodoviariodaf.html"><h1>TRATOR CASE MXM 180</h1></a></div>
+                    <div class="btncard-custom"><a href="produtos/rodoviariodaf.html">Saiba mais</a></div>
+                </div>
+                <div class="card-custom">
+                    <div class="imgcard-custom"><a href="produtos/rodoviariomercedes.html"><img class="img-fluid" src="images/produtos/agricola/tratorcasepuma.webp"></a></div>
+                    <div class="txtcard-custom"><a href="produtos/rodoviariomercedes.html"><h1>TRATOR CASE PUMA</h1></a></div>
+                    <div class="btncard-custom"><a href="produtos/rodoviariomercedes.html">Saiba mais</a></div>
+                </div>
+                <div class="card-custom">
+                    <div class="imgcard-custom"><a href="produtos/rodoviarioscania.html"><img class="img-fluid" src="images/produtos/agricola/tratorjohndeere5078e.webp"></a></div>
+                    <div class="txtcard-custom"><a href="produtos/rodoviarioscania.html"><h1>TRATOR JOHN DEERE 5078E</h1></a></div>
+                    <div class="btncard-custom"><a href="produtos/rodoviarioscania.html">Saiba mais</a></div>
+                </div>
             </div>
         </div>
-        <div class="produtos">
-            <div class="card">
-                <div class="imgcard"><a href="produtos/tratornewhollandtl95e.html"><img src="images/produtos/TRATOR NEW HOLLAND TL95E.png" alt="carregadeira"></a></div>
 
-                <div class="txtcard"><a href="produtos/tratornewhollandtl95e.html"><h1>TRATOR NEW HOLLAND TL95E</h1></a></div>
+        <!-- PAGINAÇÃO DESKTOP -->
+        <section class="paginacao">
+            <div class="numero"><a href="vidros-1.html">1</a></div>
+            <div class="numero"><a href="vidros-2.html">2</a></div>
+            <div class="numero"><a href="vidros-3.html">3</a></div>
+            <div class="numero"><a style="background-color: var(--vermelho);" href="vidros-4.html">4</a></div>
+            <div class="numero"><a href="vidros-5.html">5</a></div>
+            <div class="numero"><a href="vidros-6.html">6</a></div>
+        </section>
+    </section>
 
-                <div class="btncard"><a href="produtos/tratornewhollandtl95e.html">Saiba mais</a></div>
-            </div>            
-            <div class="card">
-                <div class="imgcard"><a href="produtos/tratornewhollandtm.html"><img src="images/produtos/TRATOR NEW HOLLAND TM.png" alt="carregadeira"></a></div>
-
-                <div class="txtcard"><a href="produtos/tratornewhollandtm.html"><h1>TRATOR NEW HOLLAND TM</h1></a></div>
-
-                <div class="btncard"><a href="produtos/tratornewhollandtm.html">Saiba mais</a></div>
+    <!-- PRODUTOS MOBILE -->
+    <section class="gridprodutos d-md-block d-lg-none">
+        <div class="container text-center">
+            <div class="produtos">
+                <div class="cardmobile-custom">
+                    <div class="imgcardmobile-custom"><a href="produtos/pulverizadorcaseihpatriot350.html"><img class="img-fluid" src="images/produtos/rodoviario/rodoviariovan.webp"></a></div>
+                    <div class="txtcardmobile-custom"><a href="produtos/pulverizadorcaseihpatriot350.html"><h1>RODOVIÁRIO VAN</h1></a></div>
+                    <div class="btncardmobile-custom"><a href="produtos/pulverizadorcaseihpatriot350.html">Saiba mais</a></div>
+                </div>
+                <div class="cardmobile-custom">
+                    <div class="imgcardmobile-custom"><a href="produtos/pulverizadordefensornewholland.html"><img class="img-fluid" src="images/produtos/rodoviario/rodoviariovolks.webp"></a></div>
+                    <div class="txtcardmobile-custom"><a href="produtos/pulverizadordefensornewholland.html"><h1>RODOVIÁRIO VOLKSWAGEM</h1></a></div>
+                    <div class="btncardmobile-custom"><a href="produtos/pulverizadordefensornewholland.html">Saiba mais</a></div>
+                </div>
+            </div>
+            <div class="produtos">
+                <div class="cardmobile-custom">
+                    <div class="imgcardmobile-custom"><a href="produtos/pulverizadorjactouniport.html"><img class="img-fluid" src="images/produtos/rodoviario/rodoviariovolvo.webp"></a></div>
+                    <div class="txtcardmobile-custom"><a href="produtos/pulverizadorjactouniport.html"><h1>RODOVIÁRIO VOLVO</h1></a></div>
+                    <div class="btncardmobile-custom"><a href="produtos/pulverizadorjactouniport.html">Saiba mais</a></div>
+                </div>
+                <div class="cardmobile-custom">
+                    <div class="imgcardmobile-custom"><a href="produtos/retroescavadeira3cxescavadeira.html"><img class="img-fluid" src="images/produtos/industrial/rolocompactador116djcb.webp"></a></div>
+                    <div class="txtcardmobile-custom"><a href="produtos/retroescavadeira3cxescavadeira.html"><h1 style="font-size: 14px;">ROLO COMPACTADOR 116D JCB</h1></a></div>
+                    <div class="btncardmobile-custom"><a href="produtos/retroescavadeira3cxescavadeira.html">Saiba mais</a></div>
+                </div>
+            </div>
+            <div class="produtos">
+                <div class="cardmobile-custom">
+                    <div class="imgcardmobile-custom"><a href="produtos/retroescavadeira580ncase.html"><img class="img-fluid" src="images/produtos/industrial/rolocompactador612hliugong.webp"></a></div>
+                    <div class="txtcardmobile-custom"><a href="produtos/retroescavadeira580ncase.html"><h1 style="font-size: 14px;">ROLO COMPACTADOR 612H LIUGONG</h1></a></div>
+                    <div class="btncardmobile-custom"><a href="produtos/retroescavadeira580ncase.html">Saiba mais</a></div>
+                </div>
+                <div class="cardmobile-custom">
+                    <div class="imgcardmobile-custom"><a href="produtos/retroescavadeirab60volvo.html"><img class="img-fluid" src="images/produtos/industrial/rolocompactadordynapac.webp"></a></div>
+                    <div class="txtcardmobile-custom"><a href="produtos/retroescavadeirab60volvo.html"><h1 style="font-size: 14px;">ROLO COMPACTADOR DYNAPAC</h1></a></div>
+                    <div class="btncardmobile-custom"><a href="produtos/retroescavadeirab60volvo.html">Saiba mais</a></div>
+                </div>
+            </div>
+            <div class="produtos">
+                <div class="cardmobile-custom">
+                    <div class="imgcardmobile-custom"><a href="produtos/retroescavadeirab95bnewholland.html"><img class="img-fluid" src="images/produtos/agricola/tratorcasefarmall.webp"></a></div>
+                    <div class="txtcardmobile-custom"><a href="produtos/retroescavadeirab95bnewholland.html"><h1>TRATOR CASE FARMALL</h1></a></div>
+                    <div class="btncardmobile-custom"><a href="produtos/retroescavadeirab95bnewholland.html">Saiba mais</a></div>
+                </div>
+                <div class="cardmobile-custom">
+                    <div class="imgcardmobile-custom"><a href="produtos/retroescavadeiracaterpillar416e.html"><img class="img-fluid" src="images/produtos/agricola/tratorcasemagnum240.webp"></a></div>
+                    <div class="txtcardmobile-custom"><a href="produtos/retroescavadeiracaterpillar416e.html"><h1>TRATOR CASE MAGNUM 240</h1></a></div>
+                    <div class="btncardmobile-custom"><a href="produtos/retroescavadeiracaterpillar416e.html">Saiba mais</a></div>
+                </div>
+            </div>
+            <div class="produtos">
+                <div class="cardmobile-custom">
+                    <div class="imgcardmobile-custom"><a href="produtos/retroescavadeirajhondeere.html"><img class="img-fluid" src="images/produtos/agricola/tratorcasemx100.webp"></a></div>
+                    <div class="txtcardmobile-custom"><a href="produtos/retroescavadeirajhondeere.html"><h1>TRATOR CASE MX 100</h1></a></div>
+                    <div class="btncardmobile-custom"><a href="produtos/retroescavadeirajhondeere.html">Saiba mais</a></div>
+                </div>
+                <div class="cardmobile-custom">
+                    <div class="imgcardmobile-custom"><a href="produtos/rodoviariodaf.html"><img class="img-fluid" src="images/produtos/agricola/tratorcasemxm180.webp"></a></div>
+                    <div class="txtcardmobile-custom"><a href="produtos/rodoviariodaf.html"><h1>TRATOR CASE MXM 180</h1></a></div>
+                    <div class="btncardmobile-custom"><a href="produtos/rodoviariodaf.html">Saiba mais</a></div>
+                </div>
+            </div>
+            <div class="produtos">
+                <div class="cardmobile-custom">
+                    <div class="imgcardmobile-custom"><a href="produtos/rodoviariomercedes.html"><img class="img-fluid" src="images/produtos/agricola/tratorcasepuma.webp"></a></div>
+                    <div class="txtcardmobile-custom"><a href="produtos/rodoviariomercedes.html"><h1>TRATOR CASE PUMA</h1></a></div>
+                    <div class="btncardmobile-custom"><a href="produtos/rodoviariomercedes.html">Saiba mais</a></div>
+                </div>
+                <div class="cardmobile-custom">
+                    <div class="imgcardmobile-custom"><a href="produtos/rodoviarioscania.html"><img class="img-fluid" src="images/produtos/agricola/tratorjohndeere5078e.webp"></a></div>
+                    <div class="txtcardmobile-custom"><a href="produtos/rodoviarioscania.html"><h1>TRATOR JOHN DEERE 5078E</h1></a></div>
+                    <div class="btncardmobile-custom"><a href="produtos/rodoviarioscania.html">Saiba mais</a></div>
+                </div>
             </div>
         </div>
-        <div class="produtos">
-            <div class="card">
-                <div class="imgcard"><a href="produtos/tratorvaltrabt.html"><img src="images/produtos/TRATOR VALTRA BT.png" alt="carregadeira"></a></div>
 
-                <div class="txtcard"><a href="produtos/tratorvaltrabt.html"><h1>TRATOR VALTRA BT</h1></a></div>
-
-                <div class="btncard"><a href="produtos/tratorvaltrabt.html">Saiba mais</a></div>
-            </div>            
-            <div class="card">
-                <div class="imgcard"><a href="produtos/tratorvaltrag1.html"><img src="images/produtos/TRATOR VALTRA G1.png" alt="carregadeira"></a></div>
-
-                <div class="txtcard"><a href="produtos/tratorvaltrag1.html"><h1>TRATOR VALTRA G1</h1></a></div>
-
-                <div class="btncard"><a href="produtos/tratorvaltrag1.html">Saiba mais</a></div>
-            </div>
-        </div>
-        <div class="produtos">            
-            <div class="card">
-                <div class="imgcard"><a href="produtos/tratorvaltrag2.html"><img src="images/produtos/TRATOR VALTRA G2.png" alt="carregadeira"></a></div>
-
-                <div class="txtcard"><a href="produtos/tratorvaltrag2.html"><h1>TRATOR VALTRA G2</h1></a></div>
-
-                <div class="btncard"><a href="produtos/tratorvaltrag2.html">Saiba mais</a></div>
-            </div>            
-            <div class="card">
-                <div class="imgcard"><a href="produtos/tratorvaltrag3.html"><img src="images/produtos/TRATOR VALTRA G3.png" alt="carregadeira"></a></div>
-
-                <div class="txtcard"><a href="produtos/tratorvaltrag3.html"><h1>TRATOR VALTRA G3</h1></a></div>
-
-                <div class="btncard"><a href="produtos/tratorvaltrag3.html">Saiba mais</a></div>
-            </div>
-        </div>
-        <div class="produtos">
-            <div class="card">
-                <div class="imgcard"><a href="produtos/tratorvaltraseriea.html"><img src="images/produtos/TRATOR VALTRA SERIE A.png" alt="carregadeira"></a></div>
-
-                <div class="txtcard"><a href="produtos/tratorvaltraseriea.html"><h1>TRATOR VALTRA SERIE A</h1></a></div>
-
-                <div class="btncard"><a href="produtos/tratorvaltraseriea.html">Saiba mais</a></div>
-            </div>
-            <div class="vazio"></div>
+        <!-- PAGINAÇÃO MOBILE -->
+        <div class="paginacaomobile d-flex justify-content-center">
+            <div class="numeromobile"><a href="vidros-1.html">1</a></div>
+            <div class="numeromobile"><a href="vidros-2.html">2</a></div>
+            <div class="numeromobile"><a href="vidros-3.html">3</a></div>
+            <div class="numeromobile"><a style="background-color: var(--vermelho);" href="vidros-4.html">4</a></div>
+            <div class="numeromobile"><a href="vidros-5.html">5</a></div>
+            <div class="numeromobile"><a href="vidros-6.html">6</a></div>
         </div>
     </section>
 
-    <section class="paginacao">
-        <div id="um" class="numero"><a href="produtos-1.html">1</a></div>
-        <div id="dois" class="numero"><a href="produtos-2.html">2</a></div>
-        <div id="tres" class="numero"><a href="produtos-3.html">3</a></div>
-        <div id="quatro" class="numero"><a href="produtos-4.html">4</a></div>
+    <!-- RODAPE DESKTOP -->
+    <footer class="rodape d-none d-md-none d-lg-block" style="background-color: var(--azul);">
+        <div class="container text-center">
+            <div class="dadoscontato container row pt-5">
+                <div class="contato col">
+                    <h1>ENTRE EM <span>CONTATO</span></h1>
+                    <h2><span>WhatsApp:</span> (14) 4141-7973</h2>
+                    <h2><span>E-mail:</span> jnagricola2@gmail.com</h2>
+                </div>
+                <div class="redes col text-center">
+                    <h1> REDES SOCIAIS</h1>
+                    <div class="redes-container row mt-3">
+                        <div class="img-redes col-3 me-1">
+                            <a href="https://www.facebook.com/jngricola/"><img src="images/icons/facebook.webp"></a>
+                        </div>
+                        <div class="img-redes col-3 ms-1">
+                            <a href="https://www.instagram.com/jnagricola_/"><img src="images/icons/instagram.webp"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="endereco col">
+                    <h1>ENDEREÇO</h1>
+                    <a href="https://www.google.com/maps/place/JN+AGR%C3%8DCOLA+-+VIDROS+AGR%C3%8DCOLAS+E+AR+CONDICIONADO/@-22.3145117,-49.0709945,15z/data=!4m2!3m1!1s0x0:0x2f2b4de131d51b9f?sa=X&ved=2ahUKEwjT2NCC77mCAxV8rpUCHXtCBxoQ_BJ6BAg2EAA">Praça Washington Luiz, 1-05 - Centro<br> Bauru - SP, 17010-210</a>
+                </div>
+            </div>
+            <div class="direitos" style="padding: 100px 0 5px 0;">
+                <h1 class="mb-0">Copyright © 2023 JN Agrícola - Todos os direitos reservados.</h1>
+                <h1>Desenvolvido por Deu Mídia,<a href="https://github.com/thanatusx"> Gustavo Franco</a>.</h1>
+            </div>
+        </div>
+    </footer>
 
-    </section>
-
-    <footer class="rodape">
-        <div class="dadoscontato">
+    <!-- RODAPE MOBILE -->
+    <footer class="rodape text-center d-md-block d-lg-none" style="background-color: var(--azul);">
+        <div class="dadoscontato container pt-3">
             <div class="contato">
-                <h1>ENTRE EM <span>CONTATO</span></h1>
-                <h2><span>WhatsApp:</span> (14) 4141-7973</h2>
-                <h2><span>E-mail:</span> jnagricola2@gmail.com</h2>
+                <h1 style="font-size: 24px;">ENTRE EM <span>CONTATO</span></h1>
+                <h2 style="font-size: 14px;"><span>WhatsApp:</span> (14) 4141-7973</h2>
+                <h2 style="font-size: 14px;"><span>E-mail:</span> jnagricola2@gmail.com</h2>
             </div>
             <div class="redes">
-                <h1> REDES SOCIAIS</h1>
-                <div class="redes-container">
-                    <div class="img-redes">
-                        <a href="https://www.facebook.com/jngricola/"><img src="images/icons/facebook.png"></a>
+                <h1 style="font-size: 24px;"> REDES SOCIAIS</h1>
+                <div class="redes-container d-flex mb-3">
+                    <div class="img-redes me-3">
+                        <a href="https://www.facebook.com/jngricola/"><img src="images/icons/facebook.webp" width="50px"></a>
                     </div>
-                    <div class="img-redes">
-                        <a href="https://www.instagram.com/jnagricola_/"><img src="images/icons/instagram.png"></a>
+                    <div class="img-redes ms-3">
+                        <a href="https://www.instagram.com/jnagricola_/"><img src="images/icons/instagram.webp" width="50px"></a>
                     </div>
                 </div>
             </div>
             <div class="endereco">
-                <h1>ENDEREÇO</h1>
-                <a href="https://www.google.com/maps/place/JN+AGR%C3%8DCOLA+-+VIDROS+AGR%C3%8DCOLAS+E+AR+CONDICIONADO/@-22.3145117,-49.0709945,15z/data=!4m2!3m1!1s0x0:0x2f2b4de131d51b9f?sa=X&ved=2ahUKEwjT2NCC77mCAxV8rpUCHXtCBxoQ_BJ6BAg2EAA">Praça Washington Luiz, 1-05 - Centro<br> Bauru - SP, 17010-210</a>
+                <h1 style="font-size: 24px;">ENDEREÇO</h1>
+                <a  style="font-size: 16px;" href="https://www.google.com/maps/place/JN+AGR%C3%8DCOLA+-+VIDROS+AGR%C3%8DCOLAS+E+AR+CONDICIONADO/@-22.3145117,-49.0709945,15z/data=!4m2!3m1!1s0x0:0x2f2b4de131d51b9f?sa=X&ved=2ahUKEwjT2NCC77mCAxV8rpUCHXtCBxoQ_BJ6BAg2EAA">Praça Washington Luiz, 1-05 - Centro<br> Bauru - SP, 17010-210</a>
             </div>
         </div>
-        <div class="direitos">
-            <h1>Copyright © 2023 JN Agrícola - Todos os direitos reservados.</h1>
-            <h1>Desenvolvido por Deu Mídia, Gustavo Franco.</h1>
+        <div class="direitos" style="padding: 50px 0 5px 0;">
+            <h1 class="mb-0">Copyright © 2023 JN Agrícola - Todos os direitos reservados.</h1>
+            <h1>Desenvolvido por Deu Mídia,<a href="https://github.com/thanatusx"> Gustavo Franco</a>.</h1>
         </div>
     </footer>
 
-    <script src="script/produtos.js"></script>
+    <!-- BIBLIOTECA PERSONALIZADA -->
+    <script src="script/index.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous">
+    </script>
+
+    <!-- FONT AWESOME JS -->
+    <script 
+    src="https://kit.fontawesome.com/a2edaa36f8.js"
+    crossorigin="anonymous">
+    </script>
 </body>
 </html>
