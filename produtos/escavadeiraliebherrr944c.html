@@ -2,29 +2,73 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../style/detalhes.css" rel="stylesheet">
-    <link rel="icon" href="../images/icons/LOGO-JN-AGRICOLA.ico">
+    <link rel="icon" href="/images/icons/LOGO-JN-AGRICOLA.ico">
 
-    <title>ESAVEDEIRA LERBHERR R944C | JN Agrícola</title>
+    <!-- BIBLIOTECA PERSONALIZADA -->
+    <link 
+        rel="stylesheet" 
+        href="/style/detalhes.css">
+
+    <!-- BIBLIOTECA BOOTSTRAP -->
+    <link
+        rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous">
+    
+    <!-- BIBLIOTECA FONT AWESOME -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"/>
+
+    <title>ESCAVADEIRA LIEBHERR R 944 C | JN Agrícola</title>
 </head>
 <body>
-    <div id="wpp-icon">
-        <a  href="https://api.whatsapp.com/send?phone=551441417973&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!"><img id="wpp" src="../images/icons/WhatsApp.png"></a>
+    <!-- ICONE WHATSAPP -->
+    <div class="wpp-icon">
+        <a href="https://api.whatsapp.com/send?phone=551441417973&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!"><img class="z-3" id="wpp" src="/images/icons/WhatsApp.webp" width="55px"></a>
     </div>
 
-    <header class="header">
-        <nav class="navbar">
-            <div class="img-logo">
-                <a class="logo" href="index.html"><img src="../images/icons/logo-jn.png"></a>
+    <!-- NAVBAR DESKTOP -->
+    <header class="header py-2 d-none d-md-none d-lg-block" style="background-color: var(--azul);">
+        <nav class="navbar navbar-custom container d-flex align-items-center">
+            <div class="ms-4">
+                <a href="/index.html"><img src="/images/icons/logo-jn.webp" width="80px"></a>
             </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html">HOME</a></li>
-                <li class="nav-item"><a href="produtos-1.html">PRODUTOS</a></li>
-                <li class="nav-item"><a href="index.html#promessa-forte">A JN AGRÍCOLA</a></li>
+            <ul class="text-center d-flex mt-3 me-0">
+                <li class="px-5 nav-item"><a href="/index.html">HOME</a></li>
+                <div class="px-5 dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">PRODUTOS</a>
+                    <ul class="dropdown-menu dropdown-menu-css text-center">
+                      <li><a class="p-3 dropdown-item" href="/vidros-1.html">VIDROS</a></li>
+                      <li><a class="p-3 dropdown-item" href="/arcondicionado.html">AR-CONDICIONADO</a></li>
+                      <li><a class="p-3 dropdown-item" href="/outros.html">OUTROS</a></li>
+                    </ul>
+                  </div>
+                <li class="px-5 nav-item"><a href="/index.html#promessaforte">A JN AGRÍCOLA</a></li>
             </ul>
-            <div class="menu">
+        </nav>
+    </header>
+
+    <!-- NAVBAR MOBILE -->
+    <header class="header py-2 d-md-block d-lg-none" style="background-color: var(--azul);">
+        <nav class="navbar navbar-custom container d-flex">
+            <div class="ms-4">
+                <a href="/index.html"><img src="/images/icons/logo-jn.webp" width="80px"></a>
+            </div>
+            <ul class="nav-menu text-center mt-3 px-0 z-3">
+                <li class="py-3"><a href="/index.html">HOME</a></li>
+                <li class="py-3"><a href="/vidros-1.html">VIDROS</a></li>
+                <li class="py-3"><a href="/arcondicionado.html">AR-CONDICIONADO</a></li>
+                <li class="py-3"><a href="/outros.html">OUTROS</a></li>
+                <li class="py-3"><a href="/index.html#promessaforte">A JN AGRÍCOLA</a></li>
+            </ul>
+            <div class="menu me-4">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -32,27 +76,45 @@
         </nav>
     </header>
 
-    <section class="produto">
-        <div class="barratitulo">
-            <h1>ESAVEDEIRA LERBHERR R944C</h1>
+    <!-- PRODUTO DESKTOP -->
+    <section class="produto py-5 d-none d-md-none d-lg-block">
+        <div class="barratitulo text-center py-1 pb-5">
+            <h1>ESCAVADEIRA LIEBHERR R 944 C</h1>
         </div>
-        <div class="container">
-            <div class="imgproduto">
-                <img src="/images/produtos/ESCAVADEIRA LIEBHERR R944C.png">
+        <div class="container d-flex p-5 rounded" style="background-color: var(--azul);">
+            <div>
+                <img class="img-fluid rounded my-5" src="/images/produtos/industrial/escavadeiraliebherrr944c.webp" width="500">
             </div>
             <div class="divisa"></div>
-            <div class="itens">
-                <div class="tituloitens"><h1>Itens disponíveis</h1></div>
+            <div class="itens p-5">
+                <div class="tituloitens text-center mb-5"><h1>Itens disponíveis</h1></div>
                 <div class="listaitens"><a href="">PARA-BRISA SUPERIOR</a></div>
                 <div class="listaitens"><a href="">PARA-BRISA INFERIOR</a></div>
             </div>
         </div>
-
-
     </section>
 
-    <footer class="rodape">
-        <div class="dadoscontato">
+    <!-- PRODUTOS MOBILE -->
+    <section class="produto py-5 d-md-block d-lg-none">
+        <div class="barratitulo text-center pb-4">
+            <h1 style="font-size: 32px;">ESCAVADEIRA LIEBHERR R 944 C</h1>
+        </div>
+        <div class="containe p-5 rounded m-2" style="background-color: var(--azul);">
+            <div>
+                <img class="img-fluid rounded text-center" src="/images/produtos/industrial/escavadeiraliebherrr944c.webp" width="318px">
+            </div>
+            <div class="divisamobile"></div>
+            <div class="itens px-1 pt-5">
+                <div class="tituloitens text-center mb-5"><h1 style="font-size: 26px;">Itens disponíveis</h1></div>
+                <div class="listaitens"><a style="font-size: 16px;" href="">PARA-BRISA SUPERIOR</a></div>
+                <div class="listaitens"><a style="font-size: 16px;" href="">PARA-BRISA INFERIOR</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPE DESKTOP -->
+    <footer class="rodape text-center d-none d-md-none d-lg-block" style="background-color: var(--azul);">
+        <div class="dadoscontato container d-flex pt-5">
             <div class="contato">
                 <h1>ENTRE EM <span>CONTATO</span></h1>
                 <h2><span>WhatsApp:</span> (14) 4141-7973</h2>
@@ -60,12 +122,12 @@
             </div>
             <div class="redes">
                 <h1> REDES SOCIAIS</h1>
-                <div class="redes-container">
+                <div class="redes-container d-flex mt-3">
                     <div class="img-redes">
-                        <a href="https://www.facebook.com/jngricola/"><img src="../images/icons/facebook.png"></a>
+                        <a href="https://www.facebook.com/jngricola/"><img src="/images/icons/facebook.webp"></a>
                     </div>
                     <div class="img-redes">
-                        <a href="https://www.instagram.com/jnagricola_/"><img src="../images/icons/instagram.png"></a>
+                        <a href="https://www.instagram.com/jnagricola_/"><img src="/images/icons/instagram.webp"></a>
                     </div>
                 </div>
             </div>
@@ -74,12 +136,56 @@
                 <a href="https://www.google.com/maps/place/JN+AGR%C3%8DCOLA+-+VIDROS+AGR%C3%8DCOLAS+E+AR+CONDICIONADO/@-22.3145117,-49.0709945,15z/data=!4m2!3m1!1s0x0:0x2f2b4de131d51b9f?sa=X&ved=2ahUKEwjT2NCC77mCAxV8rpUCHXtCBxoQ_BJ6BAg2EAA">Praça Washington Luiz, 1-05 - Centro<br> Bauru - SP, 17010-210</a>
             </div>
         </div>
-        <div class="direitos">
-            <h1>Copyright © 2023 JN Agrícola - Todos os direitos reservados.</h1>
-            <h1>Desenvolvido por Deu Mídia, Gustavo Franco.</h1>
+        <div class="direitos" style="padding: 100px 0 5px 0;">
+            <h1 class="mb-0">Copyright © 2023 JN Agrícola - Todos os direitos reservados.</h1>
+            <h1>Desenvolvido por Deu Mídia,<a href="https://github.com/thanatusx"> Gustavo Franco</a>.</h1>
         </div>
     </footer>
 
-    <script src="../script/produtos.js"></script>
+    <!-- RODAPE MOBILE -->
+    <footer class="rodape text-center d-md-block d-lg-none" style="background-color: var(--azul);">
+        <div class="dadoscontato container pt-3">
+            <div class="contato">
+                <h1 style="font-size: 24px;">ENTRE EM <span>CONTATO</span></h1>
+                <h2 style="font-size: 14px;"><span>WhatsApp:</span> (14) 4141-7973</h2>
+                <h2 style="font-size: 14px;"><span>E-mail:</span> jnagricola2@gmail.com</h2>
+            </div>
+            <div class="redes">
+                <h1 style="font-size: 24px;"> REDES SOCIAIS</h1>
+                <div class="redes-container d-flex mb-3">
+                    <div class="img-redes me-3">
+                        <a href="https://www.facebook.com/jngricola/"><img src="/images/icons/facebook.webp" width="50px"></a>
+                    </div>
+                    <div class="img-redes ms-3">
+                        <a href="https://www.instagram.com/jnagricola_/"><img src="/images/icons/instagram.webp" width="50px"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="endereco">
+                <h1 style="font-size: 24px;">ENDEREÇO</h1>
+                <a  style="font-size: 16px;" href="https://www.google.com/maps/place/JN+AGR%C3%8DCOLA+-+VIDROS+AGR%C3%8DCOLAS+E+AR+CONDICIONADO/@-22.3145117,-49.0709945,15z/data=!4m2!3m1!1s0x0:0x2f2b4de131d51b9f?sa=X&ved=2ahUKEwjT2NCC77mCAxV8rpUCHXtCBxoQ_BJ6BAg2EAA">Praça Washington Luiz, 1-05 - Centro<br> Bauru - SP, 17010-210</a>
+            </div>
+        </div>
+        <div class="direitos" style="padding: 50px 0 5px 0;">
+            <h1 class="mb-0">Copyright © 2023 JN Agrícola - Todos os direitos reservados.</h1>
+            <h1>Desenvolvido por Deu Mídia,<a href="https://github.com/thanatusx"> Gustavo Franco</a>.</h1>
+        </div>
+    </footer>
+
+    <!-- BIBLIOTECA PERSONALIZADA -->
+    <script src="/script/index.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous">
+    </script>
+
+    <!-- FONT AWESOME JS -->
+    <script 
+    src="https://kit.fontawesome.com/a2edaa36f8.js"
+    crossorigin="anonymous">
+    </script>
 </body>
 </html>
