@@ -70,6 +70,7 @@ body a{
     background: var(--branco);
     margin: 5px auto;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .menu.ativo{
