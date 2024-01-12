@@ -51,15 +51,14 @@ body a{
 }
 
 /*==============NAVBAR===============*/
-.navbar-custom{
-    a{
-        color: var(--branco);
-        font: 500 20px/20px "Poppins", sans-serif;
-    }
-    li, a:hover{
-        transition: .2s;
-        color: var(--laranja);
-    }
+
+.navbar-custom a{
+    color: var(--branco);
+    font: 500 20px/20px "Poppins", sans-serif;
+}
+.navbar-custom li, a:hover{
+    transition: .2s;
+    color: var(--laranja);
 }
 
 .menu .bar{
@@ -73,16 +72,16 @@ body a{
     cursor: pointer;
 }
 
-.menu.ativo{
-    .bar:nth-child(1){
-        transform:  translateY(8px) rotate(45deg);
-    }
-    .bar:nth-child(2) {
-        opacity: 0;
-    }
-    .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
+.menu.ativo .bar:nth-child(1){
+    transform:  translateY(8px) rotate(45deg);
+}
+
+.menu.ativo .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu.ativo .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 .nav-menu {
@@ -109,42 +108,34 @@ body a{
     color: var(--laranja);
 }
 
-/*=======PARTE DE BENEFÍCIOS========*/
-
-.img-icon{
-    h1{
-        font: 600 20px "Poppins", sans-serif;
-        color: var(--branco);
-        background-color: var(--laranja);
-    }
-    h1:hover{
-        background-color: var(--vermelho);
-        transform: scale(1.04);
-        transition: .2s;
-    }
-    img:hover{
-        transform: scale(1.04);
-        transition: .2s;
-    }
+.img-icon h1{
+    font: 600 20px "Poppins", sans-serif;
+    color: var(--branco);
+    background-color: var(--laranja);
+}
+.img-icon h1:hover{
+    background-color: var(--vermelho);
+    transform: scale(1.04);
+    transition: .2s;
+}
+.img-icon img:hover{
+    transform: scale(1.04);
+    transition: .2s;
 }
 
-.titulo-beneficios{
-    h1{
-        font: 700 34px "Poppins", sans-serif;
-        color: var(--laranjae);
-    }
-    h2{
-        font: 500 24px "Poppins", sans-serif;
-        color: var(--laranja);
-    }
+.titulo-beneficios h1{
+    font: 700 34px "Poppins", sans-serif;
+    color: var(--laranjae);
+}
+.titulo-beneficios h2{
+    font: 500 24px "Poppins", sans-serif;
+    color: var(--laranja);
 }
 
 .txt-bene{
     font: 500 20px "Poppins", sans-serif;
     color: var(--preto);
 }
-
-/* ===================QUEM SOMOS================== */
 
 .titulo-quem h1{
     font: 600 54px "Manrope", sans-serif;
@@ -163,48 +154,40 @@ body a{
     text-indent: 30px;
 }
 
-/* ================= RODAPE ================ */
-
-.contato{
-    h1{
-        font: 700 32px "Poppins", sans-serif;
-        color: var(--branco);
-    }
-    h2{
-       font: 500 20px "Manrope", sans-serif;
-        color: var(--branco);
-    }
-    span{
-        font-weight: 700;
-        color: var(--laranja);
-    }
+.contato h1{
+    font: 700 32px "Poppins", sans-serif;
+    color: var(--branco);
+}
+.contato h2{
+    font: 500 20px "Manrope", sans-serif;
+    color: var(--branco);
+}
+.contato span{
+    font-weight: 700;
+    color: var(--laranja);
 }
 
-.redes{
-    h1{
-        font: 700 32px "Poppins", sans-serif;
-        color: var(--branco);
-    }
-    img:hover{
-        transform: scale(1.04);
-        opacity: 0.8;
-        transition: .2s;
-    }
+.redes h1{
+    font: 700 32px "Poppins", sans-serif;
+    color: var(--branco);
+}
+.redes img:hover{
+    transform: scale(1.04);
+    opacity: 0.8;
+    transition: .2s;
 }
 
-.endereco{
-    h1{
-        font: 700 32px "Poppins", sans-serif;
-        color: var(--branco);
-    }
-    a{
-        font: 500 20px "Poppins", sans-serif;
-        color: var(--branco);
-    }
-    a:hover{
-        color: var(--cinzaesc);
-        transition: 0.2s;
-    }
+.endereco h1{
+    font: 700 32px "Poppins", sans-serif;
+    color: var(--branco);
+}
+.endereco a{
+    font: 500 20px "Poppins", sans-serif;
+    color: var(--branco);
+}
+.endereco a:hover{
+    color: var(--cinzaesc);
+    transition: 0.2s;
 }
 
 .direitos a{
@@ -212,11 +195,11 @@ body a{
     }
 
 .direitos a:hover{
-        color: var(--laranja);
-        transition: .2s;
-    }
-    
+    color: var(--laranja);
+    transition: .2s;
+}
+
 .direitos h1{
-        font: 300 12px "Manrope", sans-serif;
-        color: var(--branco);
-    }
+    font: 300 12px "Manrope", sans-serif;
+    color: var(--branco);
+}
