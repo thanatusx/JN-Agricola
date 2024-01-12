@@ -207,16 +207,16 @@ body a{
     }
 }
 
-.direitos{
-    a{
+.direitos a{
     color: var(--branco);
     }
-    a:hover{
+
+.direitos a:hover{
         color: var(--laranja);
         transition: .2s;
     }
-    h1{
+    
+.direitos h1{
         font: 300 12px "Manrope", sans-serif;
         color: var(--branco);
     }
-}
