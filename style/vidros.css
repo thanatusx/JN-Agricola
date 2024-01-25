@@ -212,8 +212,8 @@ body a{
 
 
 .cardmobile-custom{
-    width: 175px;
-    height: 275px;
+    width: 170px;
+    height: 290px;
     background-color: var(--azul);
     flex-direction: column;
     border-radius: 5px;
@@ -222,7 +222,7 @@ body a{
 
 .vaziomobile{
     width: 175px;
-    height: 275px;
+    height: 290px;
     margin: 5px 5px;
 }
 
@@ -233,11 +233,10 @@ body a{
 }
 
 .txtcardmobile-custom h1{
-    height: 55px;
+    height: 75px;
     margin: 10px 8px 0px 8px;
     font: 500 16px/20px "Poppins", sans-serif;
     color: var(--branco);
-    
     text-align: center;
 }
 
